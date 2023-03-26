@@ -1,0 +1,35 @@
+.header {
+
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header__container {}
+
+.header__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {}
+
+.header__nav {
+    // display: inline-flex;
+}
+
+.header__menu {}
+
+.header__cantacts {
+    display: flex;
+    align-items: center;
+}
+
+.header__mail {
+    margin-right: 15px;
+}
+
+.header__btn {
+    margin-top: 0;
+}

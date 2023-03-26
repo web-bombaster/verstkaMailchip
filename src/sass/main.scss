@@ -1,0 +1,33 @@
+// Переменные
+@import "_vars";
+
+// Нормализация
+@import '_preloader';
+@import '_normalize';
+
+// Смартгрид и свои миксины
+// @import '_smart-grid';
+// @import '_mixins/mixins'; // свои миксины
+
+// Шрифты
+// @import "_fonts";
+
+// Свои общие стили
+@import "_main";
+
+// Стандартности
+// @import '_breadcrumbs'; // Постраничная навигация
+@import "_burger";
+@import '_button'; // Кнопки
+
+
+
+// Стили текущего проекта
+@import "_first-screen";
+@import "_header";
+@import "_menu";
+@import "_hero";
+
+
+// Библиотеки и их кастомизация
+// @import "../libs/swiper-bundle.min";

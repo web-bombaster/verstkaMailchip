@@ -1,0 +1,86 @@
+.btn {
+	display: inline-flex;
+
+	margin-top: 40px;
+	padding: 15px 40px;
+
+	color: #fff;
+	font-size: 16px;
+	line-height: 1;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+
+	background-color: var(--color-text);
+	border: 2px solid var(--color-text);
+	border-radius: 50px;
+	border: none;
+
+	transition: background-color .25s, color .25s, transform .25s;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: var(--color-text-hover);
+}
+
+.btn:hover:not(:disabled) {
+	transform: translateY(-2px);
+}
+
+.btn:focus {
+	background-color: #A3DA37;
+}
+
+.btn:disabled {
+	opacity: 0.4;
+}
+
+.btn--accent {
+	background-color: var(--color-accent1);
+	border: 2px solid var(--color-accent1);
+
+	&:hover:not(:disabled) {
+		background-color: var(--color-accent1-hover);
+		border: 2px solid var(--color-accent1-hover);
+	}
+}
+
+.btn--accent-transparent {
+	background-color: transparent;
+	border: 2px solid var(--color-accent1);
+	color: var(--color-accent1);
+
+	&:hover:not(:disabled) {
+		background-color: transparent;
+		border: 2px solid var(--color-accent1-hover);
+		color: var(--color-accent1-hover);
+	}
+}
+
+
+
+.btn-arrow {
+	display: inline-block;
+
+	height: 48px;
+	width: 150px;
+
+	color: #fff;
+
+	background-color: #2C2C2C;
+	border: none;
+
+	background-image: url('../img/arrow-white.svg');
+	background-size: 45px 16px;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	cursor: pointer;
+
+	transition: .25s;
+
+	&:hover {
+		background-color: #FF7043;
+	}
+}

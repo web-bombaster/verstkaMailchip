@@ -1,0 +1,46 @@
+.hero {
+    padding-top: 80px;
+}
+
+.hero__container {}
+
+.hero__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    @media (max-width: $break_sm) {
+        flex-direction: column;
+    }
+}
+
+.hero__info {
+    max-width: 595px;
+}
+
+.hero__text {
+    // margin-bottom: 135px;
+    margin-bottom: 22.7%;
+}
+
+.hero__title {
+    max-width: 554px;
+}
+
+.hero__descr {}
+
+.hero__btn {
+
+}
+
+.hero__integration {}
+
+.hero__img {
+    max-width: 600px;
+    width: 100%;
+
+    @media (max-width: $break_sm) {
+        order: 2;
+    }
+}
