@@ -1,1 +1,5 @@
-# verstkaMailchip
+# Верстка макета «MailChip – универсальная и быстрая рассылка писем»
+
+GitHub Pages: 
+
+Работу выполнил: [Мошатин Юрий](https://vk.com/moshatin)
