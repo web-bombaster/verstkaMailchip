@@ -24,6 +24,7 @@
 .header__cantacts {
     display: flex;
     align-items: center;
+    grid-template: var(--mainGap);
 }
 
 .header__mail {

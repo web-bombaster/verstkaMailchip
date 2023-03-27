@@ -143,10 +143,13 @@ ul:not([class]) {
 
 .section-header__sub-title {
 	margin-top: 0;
-	margin-bottom: 1rem;
-	font-size: 2.4rem;
-	line-height: 1.16;
-	font-weight: 600;
+	margin-bottom: 7.8rem;
+	font-size: 1.6rem;
+	font-weight: 400;
+
+	max-width: 440px;
+	margin-left: auto;
+	margin-right: auto;
 
 	@media screen and (max-width: $break_lg) {
 		font-size: 2rem;
@@ -201,55 +204,7 @@ h3:not([class]) {
 	}
 }
 
-.swiper__prev, .swiper__next {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	height: 4.2rem;
-	width: 4.2rem;
-	border-radius: 50%;
-	background-color: rgba(254, 254, 254, 0.9);
 
-	background-image: url('../img/icons/arrow.svg');
-	background-repeat: no-repeat;
-	background-position: center;
-
-	box-shadow: rem rem .3rem rem #b3b3b3;
-
-	z-index: 1;
-	cursor: pointer;
-
-	@media screen and (max-width: $break_sm) {
-		height: 3.2rem;
-		width: 3.2rem;
-	}
-}
-
-.swiper__prev {
-	left: calc(-4.2rem - 1.5rem);
-	transform: translateY(-50%) rotate(180deg);
-
-	@media screen and (max-width: 120rem) {
-		left: -1.5rem;
-	}
-}
-
-.swiper__next {
-	right: calc(-4.2rem - 1.5rem);
-
-	@media screen and (max-width: 120rem) {
-		right: -1.5rem;
-	}
-}
-
-.swiper-button-disabled {
-	opacity: .5;
-	cursor: auto;
-}
-
-.swiper-pagination-bullet-active {
-	background-color: var(--color-main) !important;
-}
 
 // Страница показа верстки
 .index {

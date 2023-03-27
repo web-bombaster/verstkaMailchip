@@ -1,0 +1,32 @@
+mixin instructionItem(src, title, descr)
+	li.instruction__item.instruction-item
+		.instruction-item__box
+			.instruction-item__title #{title}
+			.instruction-item__descr #{descr}
+		img(src="img/icons/"+src, alt="").instruction-item__icon
+
+
+
+
+.instruction
+	.container.instruction__container
+		h2.section-header.instruction__section-header 15 минут и рассылка готова
+		ul.instruction__box
+
+			+instructionItem(
+				'01.svg',
+				'Загрузите базу email-адресов',
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+			)
+
+			+instructionItem(
+				'02.svg',
+				'Создайте письмо в простом конструкторе',
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+			)
+
+			+instructionItem(
+				'03.svg',
+				'Отправьте email и следите за результатами',
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+			)

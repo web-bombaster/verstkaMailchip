@@ -34,7 +34,16 @@
 
 }
 
-.hero__integration {}
+.hero__integration {
+    span {
+        padding: 5px 19px;
+        margin-left: 5px;
+        display: inline-flex;
+
+        border-radius: 50px;
+        border: 1px solid var(--color-text);
+    }
+}
 
 .hero__img {
     max-width: 600px;

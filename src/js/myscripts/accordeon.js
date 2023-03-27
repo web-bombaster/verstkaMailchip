@@ -1,5 +1,5 @@
-const accordeonItems = document.querySelectorAll('.accordeon__title'); // Все заголовки элементов аккордиона, по которым щелкаем для открытия / закрытия контента выбранного элемента
-const accordeonItemsContent = document.querySelectorAll('.accordeon__content'); // Контент всех элементов аккордиона, который открывается, закрывается
+const accordeonItems = document.querySelectorAll('.accordeon-title'); // Все заголовки элементов аккордиона, по которым щелкаем для открытия / закрытия контента выбранного элемента
+const accordeonItemsContent = document.querySelectorAll('.accordeon-descr'); // Контент всех элементов аккордиона, который открывается, закрывается
 
 // Перебираем заголовки аккордеона, по которым можем щелкнуть
 accordeonItems.forEach((element, index) => {
@@ -22,10 +22,10 @@ accordeonItems.forEach((element, index) => {
 		// };
 
 		// Переключаем класс активности элемента, по которому щелкнули
-		accordeonItems[index].classList.toggle('accordeon__title--active');
+		accordeonItems[index].classList.toggle('toggle');
 
 		// Делаем тоггл для контета элемента, по которому щелкнули
-		accordeonItemsContent[index].classList.toggle('accordeon__content--hidden');
+		accordeonItemsContent[index].classList.toggle('toggle');
 
 	});
 });

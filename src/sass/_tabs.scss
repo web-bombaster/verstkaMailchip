@@ -1,0 +1,31 @@
+.tabs {
+}
+.tabs__btns {
+}
+.tabs-btns {
+	margin-bottom: 60px;
+
+	@media screen and (max-width: $break_sm) {
+		margin-bottom: 35px;
+	}
+}
+.tabs-btns__item {
+}
+.tab-btn-item {
+	margin-top: 0;
+	transition: 0s;
+}
+
+.tabs__content {
+}
+.tabs-content {
+}
+.tabs-content__item {
+}
+.tabs-content-item {
+	display: none;
+
+	&.toggle {
+		display: block;
+	}
+}

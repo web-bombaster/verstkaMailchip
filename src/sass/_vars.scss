@@ -26,22 +26,27 @@ $break_xxs: 330px;
     --color-main: #0265C2; // основной цвет
 
     --color-border: #eee; // основной цвет
+    --bg-color: #FBFBFB;
+    
+    ---color-etxt-footer: #868686;
+
+
 
     // Шрифты
     --font-family: 'Inter', sans-serif;
 
     // Скругления
-    --brs6: .6rem;
+    --brs6: 2rem;
 
     // Размеры
-    --mainGap: 20px;
+    --mainGap: 3rem;
     @media (max-width: $break_lg) {
-        --mainGap: 10px;
+        --mainGap: 1.5rem;
     }
 
-    --indentBlocks: 4.8rem;
+    --indentBlocks: 11rem;
     @media (max-width: $break_lg) {
-        --indentBlocks: 4rem;
+        --indentBlocks: 5rem;
     }
 
     --heroMinCol: calc(100% / 5 - 3 / 4 * var(--mainGap));
