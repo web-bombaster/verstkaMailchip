@@ -6,8 +6,8 @@
     background-size: cover;
     background-position: center;
 
-    @media (max-width: $break_sm) {
-        padding-top: 24px;
+    @media (max-width: $break_md) {
+        padding-top: 0;
         padding-bottom: 40px;
     }
 }

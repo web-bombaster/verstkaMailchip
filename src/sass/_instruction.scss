@@ -9,6 +9,10 @@
 	text-align: center;
 	margin-bottom: 9rem;
 
+	@media (max-width: $break_lg) {
+		margin-bottom: 5rem;
+	}
+
 	@media screen and (max-width: $break_sm) {
 		margin-bottom: 3.4rem;
 	}
@@ -18,14 +22,28 @@
 	justify-content: space-between;
 	gap: var(--mainGap);
 
+    // padding-left: 30px;
     counter-reset: li;
-    padding-left: 30px;
-    // margin-top: 25px;
-    // margin-bottom: 25px;
+
+	@media (max-width: $break_sm) {
+		flex-wrap: wrap;
+		gap: 40px;
+	}
 }
 .instruction__item {
 	position: relative;
 	padding-left: 70px;
+
+	@media (max-width: $break_sm) {
+		width: 100%;
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media (max-width: $break_xs) {
+		max-width: 100%;
+	}
 
 	&::before {
 		content: counter(li);
@@ -36,7 +54,7 @@
 		margin-left: -70px;
 		height: 28px;
 		width: 28px;
-		
+
 		font-size: 24px;
 		color: var(--color-text);
 		font-weight: 600;
@@ -52,12 +70,12 @@
 	&::before {
 		height: 100%;
 		width: 1px;
-		
+
 		position: absolute;
 		content: '';
 		top: 0;
 		left: -25px;
-		
+
 		background-color: #C0C0C0;
 	}
 }
@@ -66,9 +84,14 @@
 
 	font-size: 20px;
 	font-weight: 600;
+	line-height: 1.2;
 }
 .instruction-item__descr {
 	margin-bottom: 45px;
+
+	@media (max-width: $break_sm) {
+		margin-bottom: 27px;
+	}
 }
 .instruction-item__icon {
 	display: block;
@@ -76,4 +99,8 @@
 	margin-right: auto;
 	height: 94px;
 	width: auto;
+
+	@media (max-width: $break_sm) {
+		height: 70px;
+	}
 }

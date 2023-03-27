@@ -12,294 +12,66 @@
   </head>
   <body>
     <div class="visible" id="preloader"></div>
-    <div class="first-screen">
-      <header class="header">
-        <div class="container header__container">
-          <div class="header__box"><a class="header__logo" href="/"><img src="img/logo.png" alt=""></a>
-            <nav class="header__nav">
-              <ul class="header__menu header__menu menu">
-                <li class="menu__item"><a class="menu-link" href="#">Услуги</a></li>
-                <li class="menu__item"><a class="menu-link" href="#">О сервисе</a></li>
-                <li class="menu__item"><a class="menu-link" href="#">Тарифы</a></li>
-                <li class="menu__item"><a class="menu-link" href="#">Преимущество</a></li>
-              </ul>
-            </nav>
-            <div class="header__cantacts">
-              <div class="header__mail">support@mailchip.ru</div><a class="header__btn btn btn--accent-transparent">Вход</a>
+    <main>
+      <div class="first-screen">
+        <header class="header">
+          <div class="container header__container">
+            <div class="header__box">
+              <button class="header__menu-btn burger__menu-btn js-burger jsMobileMenuBtnToggle"><span></span></button><a class="header__logo" href="/"><img src="img/logo.png" alt=""></a>
+              <nav class="header__nav">
+                <ul class="header__menu header__menu menu">
+                  <li class="menu__item"><a class="menu-link" href="#">Услуги</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#">О сервисе</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#">Тарифы</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#">Преимущество</a></li>
+                </ul>
+              </nav>
+              <div class="header__cantacts">
+                <div class="header__mail">support@mailchip.ru</div><a class="header__btn btn btn--accent-transparent">Вход</a>
+              </div>
             </div>
           </div>
-        </div>
-      </header>
-      <div class="hero">
-        <div class="container hero__container">
-          <div class="hero__box">
-            <div class="hero__info">
-              <div class="hero__text">
-                <h1 class="hero__title section-header">MailChip — универсальная и быстрая рассылка писем</h1>
-                <div class="hero__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                <button class="hero__btn btn btn--accent">Попробовать бесплатно</button>
-              </div>
-              <div class="hero__integration">Интеграция:<span>Tilda</span><span>LP Generator</span></div>
-            </div><img class="hero__img" src="img/hero.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-    <main></main>
-    <div class="instruction">
-      <div class="container instruction__container">
-        <h2 class="section-header instruction__section-header">15 минут и рассылка готова</h2>
-        <ul class="instruction__box">
-              <li class="instruction__item instruction-item">
-                <div class="instruction-item__box">
-                  <div class="instruction-item__title">Загрузите базу email-адресов</div>
-                  <div class="instruction-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                </div><img class="instruction-item__icon" src="img/icons/01.svg" alt="">
-              </li>
-              <li class="instruction__item instruction-item">
-                <div class="instruction-item__box">
-                  <div class="instruction-item__title">Создайте письмо в простом конструкторе</div>
-                  <div class="instruction-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                </div><img class="instruction-item__icon" src="img/icons/02.svg" alt="">
-              </li>
-              <li class="instruction__item instruction-item">
-                <div class="instruction-item__box">
-                  <div class="instruction-item__title">Отправьте email и следите за результатами</div>
-                  <div class="instruction-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                </div><img class="instruction-item__icon" src="img/icons/03.svg" alt="">
-              </li>
-        </ul>
-      </div>
-    </div>
-    <div class="services">
-      <div class="container services__container">
-        <div class="services__box">
-          <div class="services__col-one">
-            <h2 class="section-header services__section-header">Чем мы<br>можем помочь</h2>
-            <div class="services__img"><img src="img/services.jpg" alt=""></div>
-          </div>
-          <div class="services__col-two">
-            <ul class="services__list services-list">
-              <li class="services-list__item">
-                <div class="services-list__title">Комплексные услуги</div>
-                <div class="services-list__descr">
-                  <ul>
-                    <li>Email-рассылка с нуля</li>
-                    <li>Ежемесячное ведение рассылок</li>
-                    <li>Настройка рассылки</li>
-                  </ul>
+        </header>
+        <div class="hero">
+          <div class="container hero__container">
+            <div class="hero__box">
+              <div class="hero__info">
+                <div class="hero__text">
+                  <h1 class="hero__title section-header">MailChip — универсальная и быстрая рассылка писем</h1>
+                  <div class="hero__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                  <button class="hero__btn btn btn--accent">Попробовать бесплатно</button>
                 </div>
-              </li>
-              <li class="services-list__item">
-                <div class="services-list__title">Разовые услуги</div>
-                <div class="services-list__descr">
-                  <ul>
-                    <li>Аудит рассылок</li>
-                    <li>Выход из спама</li>
-                    <li>Автоматическая серия писем</li>
-                    <li>Реанимация базы</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="services-list__item">
-                <div class="services-list__title">Шаблоны писем</div>
-                <div class="services-list__descr">
-                  <ul>
-                    <li>Создадим шаблон письма</li>
-                    <li>Заказать верстку письма</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="services-list__item">
-                <div class="services-list__title">Помощь в работе</div>
-                <div class="services-list__descr">
-                  <ul>
-                    <li>Аутентификация</li>
-                    <li>Настройка корпоративной почты</li>
-                    <li>Настройка форм подписки</li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="features">
-      <div class="container features__container">
-        <div class="features__box">
-          <div class="features__item features-item">
-            <div class="features-item__box">
-              <div class="features-item__info">
-                <div class="features-item__title section-header">Создавайте автоматические триггерные рассылки</div>
-                <div class="features-item__descr">Приветствуйте и отправляйте бонусы за подписку, напоминайте о брошенных корзинах, благодарите за заказ или отправляйте чеки на основе действий пользователя.</div><a class="features-item__btn btn" href="#">Создать рассылку</a>
-              </div>
-              <div class="features-item__img"><img src="img/content/features-01.png" alt=""></div>
-            </div>
-          </div>
-          <div class="features__item features-item">
-            <div class="features-item__box">
-              <div class="features-item__info">
-                <div class="features-item__title section-header">Анализируйте эффективность рассылок</div>
-                <div class="features-item__descr">Получение API ключа. Параметры для отправки по SMTP. Статистика. Уникальные переходы,отписались. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div><a class="features-item__btn btn" href="#">Подключить API</a>
-              </div>
-              <div class="features-item__img"><img src="img/content/features-02.png" alt=""></div>
+                <div class="hero__integration">Интеграция:<span>Tilda</span><span>LP Generator</span></div>
+              </div><img class="hero__img" src="img/hero.png" alt="">
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="advantages">
-      <div class="container advantages__container">
-        <h2 class="section-header advantages__section-header">Сервис, с которым у вас все получится</h2>
-        <div class="advantages__sub-title section-header__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-        <div class="advantages__box">
-          <div class="advantages__item advantages-item advantages-item--yellow"><img class="advantages-item__icon" src="img/advantages/01.svg" alt="">
-            <div class="advantages-item__title">Универсальность рассылки</div>
-            <div class="advantages-item__descr">Мы используем самые лучшие инструменты, которые помогают решать все задачи email-маркетинга. Занимаемся всеми видами рассылок.</div>
-          </div>
-          <div class="advantages__item advantages-item advantages-item--orange"><img class="advantages-item__icon" src="img/advantages/02.svg" alt="">
-            <div class="advantages-item__title">Адаптивность писем</div>
-            <div class="advantages-item__descr">Наши рассылки одинаково хорошо открываются на любых устройствах (компьютер, телефон, планшет).</div>
-          </div>
-          <div class="advantages__item advantages-item advantages-item--blue"><img class="advantages-item__icon" src="img/advantages/03.svg" alt="">
-            <div class="advantages-item__title">Стоимость услуг</div>
-            <div class="advantages-item__descr">У нас отличное соотношение цены и качества предоставляемых услуг. Система понижения цен, в зависимости от объёма работы.</div>
-          </div>
-        </div><a class="btn btn--accent">Зарегистрироваться</a>
-      </div>
-    </div>
-    <div class="reviews">
-      <div class="container reviews__container">
-        <h2 class="section-header reviews__section-header">Что о нас говорят</h2>
-        <div class="reviews__box">
-          <div class="swiper jsReviewsSlider">
-            <div class="reviews__wrapper swiper-wrapper">
-              <div class="reviews__item reviews-item swiper-slide">
-                <div class="reviews-item__info">
-                  <div class="reviews-item__icon">А</div>
-                  <div class="reviews-item__user">
-                    <div class="reviews-item__name">Александра Р. </div>
-                    <div class="reviews-item__post">Маркетолог</div>
-                  </div>
-                </div>
-                <div class="reviews-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-              </div>
-              <div class="reviews__item reviews-item swiper-slide">
-                <div class="reviews-item__info">
-                  <div class="reviews-item__icon">В</div>
-                  <div class="reviews-item__user">
-                    <div class="reviews-item__name">Виктор</div>
-                    <div class="reviews-item__post">Маркетолог</div>
-                  </div>
-                </div>
-                <div class="reviews-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-              </div>
-              <div class="reviews__item reviews-item swiper-slide">
-                <div class="reviews-item__info">
-                  <div class="reviews-item__icon">А</div>
-                  <div class="reviews-item__user">
-                    <div class="reviews-item__name">Александра Р. </div>
-                    <div class="reviews-item__post">Маркетолог</div>
-                  </div>
-                </div>
-                <div class="reviews-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-              </div>
-              <div class="reviews__item reviews-item swiper-slide">
-                <div class="reviews-item__info">
-                  <div class="reviews-item__icon">В</div>
-                  <div class="reviews-item__user">
-                    <div class="reviews-item__name">Виктор</div>
-                    <div class="reviews-item__post">Маркетолог</div>
-                  </div>
-                </div>
-                <div class="reviews-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper__prev reviews__prev"></div>
-          <div class="swiper__next reviews__next"></div>
-        </div>
-      </div>
-    </div>
-    <section class="tariff">
-      <div class="container tariff__container">
-        <h2 class="section-header tariff__section-tariff">Тарифы</h2>
-        <div class="tariff__sub-title section-header__sub-title">Мы разработали универсальную систему тарифов, которая будет выгодна как для новичков, так и для крупного бизнеса</div>
-        <div class="tabs">
-          <div class="tabs__btns tabs-btns">
-            <button class="btn tabs-btns__item tab-btn-item toggle">Количество контактов</button>
-            <button class="btn btn--transparent tabs-btns__item tab-btn-item">Количество писем</button>
-          </div>
-          <div class="tabs__content tabs-content">
-            <div class="tabs-content__item tabs-content-item toggle">Содержимое первого таба</div>
-            <div class="tabs-content__item tabs-content-item">Содержимое второго таба</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="faq">
-      <div class="container faq__container">
-        <h2 class="section-header faq__section-header">Часто задаваемые вопросы</h2>
-        <ul class="faq__list faq-list">
-          <li class="faq-list__item">
-            <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку?</div>
-            <div class="faq-list__descr accordeon-descr">
-              <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
-            </div>
-          </li>
-          <li class="faq-list__item">
-            <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку?</div>
-            <div class="faq-list__descr accordeon-descr">
-              <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
-            </div>
-          </li>
-          <li class="faq-list__item">
-            <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку?</div>
-            <div class="faq-list__descr accordeon-descr">
-              <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
-            </div>
-          </li>
-          <li class="faq-list__item">
-            <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку?</div>
-            <div class="faq-list__descr accordeon-descr">
-              <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
-            </div>
-          </li>
-          <li class="faq-list__item">
-            <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку?</div>
-            <div class="faq-list__descr accordeon-descr">
-              <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="call-to-action">
-      <div class="container call-to-action__container"><a class="call-to-action__box" href="#">
-          <h2 class="call-to-action__title section-header call-to-action__section-header">Создайте рассылку в MailChip за считанные минуты </h2>
-          <div class="call-to-action__descr">Начните с нами улучшать свой маркетинг прямо сейчас!</div>
-          <button class="call-to-action__btn btn btn--accent">Зарегистрироваться</button></a></div>
-    </div>
-    <footer class="footer">
-      <div class="container footer__container">
-        <div class="footer__top footer-top"><a class="footer-top__logo" href="#"><img src="../../img/logo-footer.png" alt=""></a>
-          <ul class="footer-top__menu footer-menu">
-            <li class="footer-menu__item"><a class="footer-menu__link">Услуги</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link">Тарифы</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link">Способы оплаты</a></li>
+      <div class="instruction">
+        <div class="container instruction__container">
+          <h2 class="section-header instruction__section-header">15 минут и рассылка готова</h2>
+          <ul class="instruction__box">
+                  <li class="instruction__item instruction-item">
+                    <div class="instruction-item__box">
+                      <div class="instruction-item__title">Загрузите базу email-адресов</div>
+                      <div class="instruction-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                    </div><img class="instruction-item__icon" src="img/icons/01.svg" alt="">
+                  </li>
+                  <li class="instruction__item instruction-item">
+                    <div class="instruction-item__box">
+                      <div class="instruction-item__title">Создайте письмо в простом конструкторе</div>
+                      <div class="instruction-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                    </div><img class="instruction-item__icon" src="img/icons/02.svg" alt="">
+                  </li>
+                  <li class="instruction__item instruction-item">
+                    <div class="instruction-item__box">
+                      <div class="instruction-item__title">Отправьте email и следите за результатами</div>
+                      <div class="instruction-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                    </div><img class="instruction-item__icon" src="img/icons/03.svg" alt="">
+                  </li>
           </ul>
-          <div class="footer-top__contacts"><a href="tel:+79257079442">+7 (925)707-94-42</a><a href="mailto:support@mailchip.ru">support@mailchip.ru</a></div>
-        </div>
-        <div class="footer__middle footer-middle">
-          <div class="footer-middle__col"><a class="footer-link" href="#">Публичный договор</a><a class="footer-link" href="#">Анти-спам политика</a></div>
-          <div class="footer-middle__col"><a class="footer-link" href="#">Политика приватности</a><a class="footer-link" href="#">Политика безопасности</a></div>
-        </div>
-        <div class="footer__bottom footer-bottom">
-          <div class="footer-bottom__col">MailChip — онлайн-сервис, который позволяет организовать email-рассылки вашим клиентам быстро, надёжно и недорого!				</div>
-          <div class="footer-bottom__col">ООО «Джалисия» ОГРН 1221600022820 ИНН/КПП 1644099745 164401001. Адрес: 423408, Республика Татарстан, Альметьевский р-н, г Альметьевск, мкр. Урсала, Наили Закировой ул, д. 10.Режим работы: ПН-ПТ 09:30–18:00</div>
         </div>
       </div>
-    </footer>
+    </main>
   </body>
 </html>
