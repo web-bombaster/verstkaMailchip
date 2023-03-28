@@ -8,8 +8,7 @@
 .call-to-action__container {
 }
 .call-to-action__box {
-	padding-top: 58px;
-	padding-bottom: 58px;
+	padding: 58px;
 
 	display: flex;
 	flex-direction: column;
@@ -23,9 +22,22 @@
 	border-radius: var(--brs6);
 
 	@media screen and (max-width: $break_sm) {
-		padding-top: 64px;
-		padding-bottom: 64px;
+		padding: 64px 25px;
+		// padding-top: 64px;
+		// padding-bottom: 64px;
+
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
 	}
+
+
+	@media screen and (max-width: $break_xs) {
+		max-width: 100%;
+		padding: 64px 15px;
+	}
+
+
 }
 .call-to-action__title {
 	max-width: 685px;

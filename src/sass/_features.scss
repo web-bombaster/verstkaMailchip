@@ -26,6 +26,20 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 50px;
+
+	@media screen and (max-width: $break_sm) {
+		flex-direction: column;
+		gap: 25px;
+
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media screen and (max-width: $break_xs) {
+		max-width: 100%;
+	}
 }
 .features-item__info {
 	max-width: 490px;
@@ -37,9 +51,24 @@
 .features-item__descr {
 }
 .features-item__btn {
+	@media screen and (max-width: $break_sm) {
+		margin-top: 30px;
+	}
 }
 .btn {
 }
 .features-item__img {
 	max-width: 568px;
+
+	@media screen and (max-width: $break_sm) {
+		order: -1;
+	}
+}
+
+.features-item__header-mobile {
+	display: none;
+
+	@media screen and (max-width: $break_sm) {
+		display: block;
+	}
 }

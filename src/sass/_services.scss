@@ -15,15 +15,39 @@
 		gap: 100px;
 	}
 
-	@media screen and (max-width: $break_md) {
+	@media screen and (max-width: $break_lg) {
 		gap: 50px;
+	}
+
+	@media screen and (max-width: $break_sm) {
+		flex-direction: column;
 	}
 }
 .services__col-one {
 	max-width: 34%;
+
+	@media screen and (max-width: $break_sm) {
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media screen and (max-width: $break_xs) {
+		max-width: 100%;
+	}
 }
 .services__col-two {
 	flex-grow: 1;
+
+	@media screen and (max-width: $break_sm) {
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media screen and (max-width: $break_xs) {
+		max-width: 100%;
+	}
 }
 .section-header {
 }
@@ -35,6 +59,10 @@
 		max-width: 440px;
 		border-radius: var(--brs6);
 		overflow: hidden;
+
+		@media screen and (max-width: 1200px) {
+			max-width: 100%;
+		}
 	}
 }
 .services__list {
@@ -64,6 +92,12 @@
 
 	counter-increment: num;
 
+	@media screen and (max-width: $break_sm) {
+		flex-direction: column;
+
+		align-items: stretch;
+	}
+
 	&::before {
 		content: counter(num);
 		counter-increment: li;
@@ -74,6 +108,10 @@
 
 		color: #828282;
 		font-weight: 600;
+
+		@media screen and (max-width: $break_sm) {
+			margin-top: 3px;
+		}
 	}
 
 	&:nth-child(-n+9):before {
@@ -85,7 +123,11 @@
 	font-weight: 600;
 }
 .services-list__descr {
-	min-width: 50%;
+	width: 50%;
+
+	@media screen and (max-width: $break_sm) {
+		width: 100%;
+	}
 	li {
 		text-decoration: underline;
 	}

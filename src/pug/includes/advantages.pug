@@ -3,21 +3,25 @@
 		h2.section-header.advantages__section-header Сервис, с которым у вас все получится
 		.advantages__sub-title.section-header__sub-title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 
-		.advantages__box
+		.advantages__slider.swiper.jsAdvantagesSlider
 
-			.advantages__item.advantages-item.advantages-item--yellow
-				img(src="img/advantages/01.svg", alt="").advantages-item__icon
-				.advantages-item__title Универсальность рассылки
-				.advantages-item__descr Мы используем самые лучшие инструменты, которые помогают решать все задачи email-маркетинга. Занимаемся всеми видами рассылок.
+			.advantages__box.swiper-wrapper
 
-			.advantages__item.advantages-item.advantages-item--orange
-				img(src="img/advantages/02.svg", alt="").advantages-item__icon
-				.advantages-item__title Адаптивность писем
-				.advantages-item__descr Наши рассылки одинаково хорошо открываются на любых устройствах (компьютер, телефон, планшет).
+				.advantages__item.advantages-item.advantages-item--yellow.swiper-slide
+					img(src="img/advantages/01.svg", alt="").advantages-item__icon
+					.advantages-item__title Универсальность рассылки
+					.advantages-item__descr Мы используем самые лучшие инструменты, которые помогают решать все задачи email-маркетинга. Занимаемся всеми видами рассылок.
 
-			.advantages__item.advantages-item.advantages-item--blue
-				img(src="img/advantages/03.svg", alt="").advantages-item__icon
-				.advantages-item__title Стоимость услуг
-				.advantages-item__descr У нас отличное соотношение цены и качества предоставляемых услуг. Система понижения цен, в зависимости от объёма работы.
+				.advantages__item.advantages-item.advantages-item--orange.swiper-slide
+					img(src="img/advantages/02.svg", alt="").advantages-item__icon
+					.advantages-item__title Адаптивность писем
+					.advantages-item__descr Наши рассылки одинаково хорошо открываются на любых устройствах (компьютер, телефон, планшет).
+
+				.advantages__item.advantages-item.advantages-item--blue.swiper-slide
+					img(src="img/advantages/03.svg", alt="").advantages-item__icon
+					.advantages-item__title Стоимость услуг
+					.advantages-item__descr У нас отличное соотношение цены и качества предоставляемых услуг. Система понижения цен, в зависимости от объёма работы.
+
+			.advantages-pagination
 
 		a.btn.btn--accent Зарегистрироваться
