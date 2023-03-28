@@ -14,7 +14,6 @@
 	background-color: var(--color-text);
 	border: 2px solid var(--color-text);
 	border-radius: 50px;
-	border: none;
 
 	transition: background-color .25s, color .25s, transform .25s;
 	cursor: pointer;
@@ -22,10 +21,10 @@
 
 .btn:hover {
 	background-color: var(--color-text-hover);
+	transform: translateY(-2px);
 }
 
 .btn:hover:not(:disabled) {
-	transform: translateY(-2px);
 }
 
 // .btn:focus {

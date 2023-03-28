@@ -1,0 +1,55 @@
+.calc
+    .calc__box
+        form(action="#").calc__form.calc-form
+            h3.calc-form__title Цена зависит от количества контактов
+            .calc-form__descr Подходит для частых рассылок и зависит только от числа подписчиков в ваших адресных базах. Оплата раз в месяц.
+
+            fieldset.calc-form__fieldset
+                legend.calc-form__legend Период
+                label.toogle
+                    input(type="radio" name="time" value="1" checked)
+                    | 1 месяц
+                label
+                    input(type="radio" name="time" value="3")
+                    | 3 месяца
+                label
+                    input(type="radio" name="time" value="6")
+                    | 6 месяцев
+                label
+                    input(type="radio" name="time" value="12")
+                    | 1 год
+
+            fieldset.calc-form__fieldset
+                legend.calc-form__legend Количество подписчиков
+                label
+                    input(type="radio" name="subscribers" value="1000")
+                    | до 1000
+                label.toogle
+                    input(type="radio" name="subscribers" value="1500" checked)
+                    | до 1500
+                label
+                    input(type="radio" name="subscribers" value="2000")
+                    | до 2000
+                label
+                    input(type="radio" name="subscribers" value="3000")
+                    | до 3000
+                label
+                    input(type="radio" name="subscribers" value="4000")
+                    | до 4000
+                label
+                    input(type="radio" name="subscribers" value="5000")
+                    | до 5000
+                label
+                    input(type="radio" name="subscribers" value="6000")
+                    | до 6000
+
+
+        .calc__info.calc-info
+            h3.calc-info__title Что входит в пакет:
+            .calc-info__descr
+                ul
+                    li Lorem ipsum dolor sit amet, consectetur adipiscing eli
+                    li Lorem ipsum dolor sit amet,
+                    li Lorem ipsum dolor sit amet, consectetur
+            span.calc-info__price.js-price-subscribers 900₽
+            span в месяц

@@ -3,6 +3,10 @@
 .tabs__btns {
 }
 .tabs-btns {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+
 	margin-bottom: 60px;
 
 	@media screen and (max-width: $break_sm) {
@@ -14,6 +18,10 @@
 .tab-btn-item {
 	margin-top: 0;
 	transition: 0s;
+
+	@media (max-width: $break_sm) {
+		padding: 15px 20px;
+	}
 }
 
 .tabs__content {

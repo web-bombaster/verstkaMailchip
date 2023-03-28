@@ -158,6 +158,10 @@ ul:not([class]) {
 	@media screen and (max-width: $break_md) {
 		font-size: 1.8rem;
 	}
+
+	@media (max-width: $break_sm) {
+		font-size: 1.6rem;
+	}
 }
 
 
