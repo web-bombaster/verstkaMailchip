@@ -1,13 +1,13 @@
-.calc
+.calc.js-calc-one
     .calc__box
-        form(action="#").calc__form.calc-form
+        .calc__form.calc-form
             h3.calc-form__title Цена зависит от количества контактов
             .calc-form__descr Подходит для частых рассылок и зависит только от числа подписчиков в ваших адресных базах. Оплата раз в месяц.
 
             fieldset.calc-form__fieldset
                 legend.calc-form__legend Период
                 label.toogle
-                    input(type="radio" name="time" value="1" checked)
+                    input(type="radio" name="time" value="1")
                     | 1 месяц
                 label
                     input(type="radio" name="time" value="3")
@@ -25,7 +25,7 @@
                     input(type="radio" name="subscribers" value="1000")
                     | до 1000
                 label.toogle
-                    input(type="radio" name="subscribers" value="1500" checked)
+                    input(type="radio" name="subscribers" value="1500")
                     | до 1500
                 label
                     input(type="radio" name="subscribers" value="2000")
