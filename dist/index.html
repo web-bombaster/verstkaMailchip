@@ -246,45 +246,23 @@
                     <div class="calc__form calc-form">
                       <h3 class="calc-form__title">Цена зависит от количества контактов</h3>
                       <div class="calc-form__descr">Подходит для частых рассылок и зависит только от числа подписчиков в ваших адресных базах. Оплата раз в месяц.</div>
-                      <fieldset class="calc-form__fieldset">
-                        <legend class="calc-form__legend">Период</legend>
-                        <label class="toogle">
-                          <input type="radio" name="time" value="1">1 месяц
-                        </label>
-                        <label>
-                          <input type="radio" name="time" value="3">3 месяца
-                        </label>
-                        <label>
-                          <input type="radio" name="time" value="6">6 месяцев
-                        </label>
-                        <label>
-                          <input type="radio" name="time" value="12">1 год
-                        </label>
-                      </fieldset>
-                      <fieldset class="calc-form__fieldset">
-                        <legend class="calc-form__legend">Количество подписчиков</legend>
-                        <label>
-                          <input type="radio" name="subscribers" value="1000">до 1000
-                        </label>
-                        <label class="toogle">
-                          <input type="radio" name="subscribers" value="1500">до 1500
-                        </label>
-                        <label>
-                          <input type="radio" name="subscribers" value="2000">до 2000
-                        </label>
-                        <label>
-                          <input type="radio" name="subscribers" value="3000">до 3000
-                        </label>
-                        <label>
-                          <input type="radio" name="subscribers" value="4000">до 4000
-                        </label>
-                        <label>
-                          <input type="radio" name="subscribers" value="5000">до 5000
-                        </label>
-                        <label>
-                          <input type="radio" name="subscribers" value="6000">до 6000
-                        </label>
-                      </fieldset>
+                      <div class="calc-form__subtitle">Период</div>
+                      <div class="calc-form__box">
+                        <div class="calc-form__btn time toogle" data-value="1" data-type="time">1 месяц</div>
+                        <div class="calc-form__btn time" data-value="3" data-type="time">3 месяца</div>
+                        <div class="calc-form__btn time" data-value="6" data-type="time">6 месяцев</div>
+                        <div class="calc-form__btn time" data-value="12" data-type="time">1 год</div>
+                      </div>
+                      <div class="calc-form__subtitle">Количество подписчиков</div>
+                      <div class="calc-form__box">
+                        <div class="calc-form__btn subscribers toogle" data-value="1000" data-type="subscribers">до 1000</div>
+                        <div class="calc-form__btn subscribers" data-value="1500" data-type="subscribers">до 1500</div>
+                        <div class="calc-form__btn subscribers" data-value="2000" data-type="subscribers">до 2000</div>
+                        <div class="calc-form__btn subscribers" data-value="3000" data-type="subscribers">до 3000</div>
+                        <div class="calc-form__btn subscribers" data-value="4000" data-type="subscribers">до 4000</div>
+                        <div class="calc-form__btn subscribers" data-value="5000" data-type="subscribers">до 5000</div>
+                        <div class="calc-form__btn subscribers" data-value="6000" data-type="subscribers">до 6000</div>
+                      </div>
                     </div>
                     <div class="calc__info calc-info">
                       <h3 class="calc-info__title">Что входит в пакет:</h3>
@@ -299,7 +277,39 @@
                   </div>
                 </div>
               </div>
-              <div class="tabs-content__item tabs-content-item">Содержимое второго таба</div>
+              <div class="tabs-content__item tabs-content-item">
+                <div class="calc js-calc-two">
+                  <div class="calc__box">
+                    <div class="calc__form calc-form">
+                      <h3 class="calc-form__title">Цена зависит от количества отправляемых писем</h3>
+                      <div class="calc-form__descr">Подходит для частых рассылок и зависит только от числа подписчиков в ваших адресных базах. Оплата раз в месяц.</div>
+                      <div class="calc-form__subtitle">Количество писем</div>
+                      <div class="calc-form__box">
+                        <div class="calc-form__btn" data-value="1000" data-price="5000">5000</div>
+                        <div class="calc-form__btn" data-value="2000" data-price="10000">10000</div>
+                        <div class="calc-form__btn toogle" data-value="3000" data-price="15000">15000</div>
+                        <div class="calc-form__btn" data-value="4000" data-price="20000">20000</div>
+                        <div class="calc-form__btn" data-value="5000" data-price="50000">50000</div>
+                        <div class="calc-form__btn" data-value="10000" data-price="100000">100000</div>
+                        <div class="calc-form__btn" data-value="15000" data-price="150000">150000</div>
+                        <div class="calc-form__btn" data-value="20000" data-price="200000">200000</div>
+                        <div class="calc-form__btn" data-value="25000" data-price="250000">250000</div>
+                        <div class="calc-form__btn" data-value="30000" data-price="500000">500000</div>
+                      </div>
+                    </div>
+                    <div class="calc__info calc-info">
+                      <h3 class="calc-info__title">Что входит в пакет:</h3>
+                      <div class="calc-info__descr">
+                        <ul>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing eli</li>
+                          <li>Lorem ipsum dolor sit amet,</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur</li>
+                        </ul>
+                      </div><span class="calc-info__price js-price-letters">900₽</span><span>в месяц</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

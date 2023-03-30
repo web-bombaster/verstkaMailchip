@@ -1,4 +1,6 @@
-.calc {}
+.calc {
+
+}
 
 .calc__box {
     display: grid;
@@ -20,7 +22,7 @@
         display: none;
     }
 
-    label {
+    label, .calc-form__btn {
         display: inline-flex;
         padding: 10px 15px;
 
@@ -76,11 +78,20 @@ label input:checked {
     }
 }
 
+.calc-form__subtitle {
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .calc-form__descr {
     margin-bottom: 20px;
 }
 
-.calc-form__fieldset {
+.calc-form__box {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
@@ -94,11 +105,7 @@ label input:checked {
     }
 }
 
-.calc-form__legend {
-    padding: 0;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
+
 
 .calc__info {
 
