@@ -18,6 +18,10 @@ function initSwiper() {
 				},
 			},
 
+			pagination: {
+				el: ".reviews-pagination",
+			},
+
 			navigation: {
 				nextEl: ".reviews__next",
 				prevEl: ".reviews__prev",
@@ -33,7 +37,7 @@ function initSwiper() {
 			loop: true,
 
 			breakpoints: {
-				992: {
+				993: {
 					slidesPerView: 3,
 					spaceBetween: 20,
 					loop: false,

@@ -1,6 +1,8 @@
 .faq {
 	padding-top: var(--indentBlocks);
 	padding-bottom: var(--indentBlocks);
+
+	overflow: hidden;
 }
 .faq__container {
 }
@@ -16,6 +18,9 @@
 
 }
 .faq-list {
+	position: relative;
+	// z-index: 2;
+
 	display: flex;
 	flex-direction: column;
 
@@ -26,6 +31,62 @@
 	background-color: var(--bg-color);
 	border-radius: var(--brs6);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+	&::before {
+		position: absolute;
+		z-index: -1;
+		content: '';
+
+		top: 0;
+		left: 0;
+
+		width: 248px;
+		height: 248px;
+
+		transform: translate(-43%, -43%);
+
+		background-image: url('../img/decoration-03.svg');
+		background-size: cover;
+
+		@media (max-width: $break_md) {
+			width: 106px;
+			height: 106px;
+		}
+
+		@media (max-width: $break_sm) {
+			transform: translate(-30%, -30%);
+		}
+	}
+
+	&::after {
+		position: absolute;
+		z-index: -1;
+		content: '';
+
+		bottom: 0;
+		right: 0;
+
+		width: 100px;
+		height: 100px;
+
+		transform: translate(50%, 50%);
+
+		background-image: url('../img/decoration-01.svg');
+		background-size: cover;
+
+		@media (max-width: $break_lg) {
+			width: 60px;
+			height: 60px;
+		}
+
+		@media (max-width: $break_sm) {
+			transform: translate(45%, 40%);
+		}
+
+		// @media (max-width: $break_sm) {
+		// 	transform: translate(-30%, -30%);
+		// }
+	}
 
 	@media screen and (max-width: $break_sm) {
 		max-width: 70%;

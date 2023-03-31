@@ -42,6 +42,10 @@
 
 	a {
 		color: #fff;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 .footer-top__logo {
@@ -123,6 +127,10 @@
 
 	a {
 		color: var(---color-etxt-footer);
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 .footer-link {

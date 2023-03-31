@@ -1,4 +1,6 @@
 .advantages {
+	position: relative;
+
 	padding-top: var(--indentBlocks);
 	padding-bottom: var(--indentBlocks);
 
@@ -6,6 +8,38 @@
 	text-align: center;
 
 	background-color: var(--color-text);
+
+	&::before {
+		position: absolute;
+		content: '';
+
+		bottom: 0;
+		left: 10%;
+
+		width: 126px;
+		height: 126px;
+
+		transform: translateY(50%);
+
+		background-image: url('../img/decoration-02.svg');
+		background-size: cover;
+
+		@media (max-width: $break_md) {
+			left: 5%;
+
+			width: 90px;
+			height: 90px;
+		}
+
+		@media (max-width: $break_xs) {
+			left: 0%;
+
+			width: 70px;
+			height: 70px;
+
+			transform: translate(-30%, 50%);
+		}
+	}
 }
 .advantages__container {
 }

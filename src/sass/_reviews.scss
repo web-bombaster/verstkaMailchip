@@ -12,6 +12,32 @@
 .reviews__box {
 	position: relative;
 
+	&::before {
+		position: absolute;
+		z-index: -1;
+		content: '';
+
+		bottom: 0;
+		right: 0;
+
+		width: 175px;
+		height: 175px;
+
+		transform: translate(43%, 43%);
+
+		background-image: url('../img/decoration-03.svg');
+		background-size: cover;
+
+		@media (max-width: $break_lg) {
+			width: 106px;
+			height: 106px;
+		}
+
+		@media (max-width: $break_sm) {
+			display: none;
+		}
+	}
+
 	@media screen and (max-width: $break_sm) {
 		max-width: 70%;
 		margin-left: auto;
@@ -23,6 +49,7 @@
 	}
 }
 .reviews__wrapper {
+
 }
 .reviews__item {
 }
@@ -91,5 +118,15 @@
 
 	@media screen and (max-width: $break_xs) {
 		font-size: 16px;
+	}
+}
+
+.reviews-pagination {
+	display: none;
+	margin-top: 10px;
+	text-align: center;
+
+	@media (max-width: $break_sm) {
+		display: block;
 	}
 }
