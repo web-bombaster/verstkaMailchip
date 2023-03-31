@@ -57,7 +57,7 @@ if (document.querySelector('.js-calc-two')) {
 	const jsCalcTwo = document.querySelector('.js-calc-two');
 	const calcFormBtns = jsCalcTwo.querySelectorAll('.calc-form__btn');
 
-	let dataPrice, time, subscribers;
+	let dataPrice
 
 	// из кнопок с классом toogle получаем значения в переменные time и subscribers из дата-элементов
 	function valueInit() {
