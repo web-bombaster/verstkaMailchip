@@ -1,8 +1,8 @@
 .hero {
     padding-top: 80px;
 
-    @media (max-width: $break_sm) {
-        padding-top: 44px;
+    @media (max-width: $break_md) {
+        padding-top: 120px;
     }
 }
 
@@ -74,6 +74,9 @@
     span {
         padding: 5px 19px;
         margin-left: 5px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+
         display: inline-flex;
 
         border-radius: 50px;

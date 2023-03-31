@@ -18,12 +18,12 @@
           <div class="container header__container">
             <div class="header__box">
               <button class="header__menu-btn burger__menu-btn js-burger jsMobileMenuBtnToggle"><span></span></button><a class="header__logo" href="/"><img src="img/logo.png" alt=""></a>
-              <nav class="header__nav">
+              <nav class="header__nav" data-da="mobile-menu__wrapper,1,768">
                 <ul class="header__menu header__menu menu">
-                  <li class="menu__item"><a class="menu-link" href="#">Услуги</a></li>
-                  <li class="menu__item"><a class="menu-link" href="#">О сервисе</a></li>
-                  <li class="menu__item"><a class="menu-link" href="#">Тарифы</a></li>
-                  <li class="menu__item"><a class="menu-link" href="#">Преимущество</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#services">Услуги</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#instruction">О сервисе</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#tariff">Тарифы</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#advantages">Преимущества</a></li>
                 </ul>
               </nav>
               <div class="header__cantacts">
@@ -47,7 +47,7 @@
           </div>
         </div>
       </div>
-      <div class="instruction">
+      <div class="instruction" id="instruction">
         <div class="container instruction__container">
           <h2 class="section-header instruction__section-header">15 минут и рассылка готова</h2>
           <ul class="instruction__box">
@@ -72,7 +72,7 @@
           </ul>
         </div>
       </div>
-      <div class="services">
+      <div class="services" id="services">
         <div class="container services__container">
           <div class="services__box">
             <div class="services__col-one">
@@ -154,7 +154,7 @@
           </div>
         </div>
       </div>
-      <div class="advantages">
+      <div class="advantages" id="advantages">
         <div class="container advantages__container">
           <h2 class="section-header advantages__section-header">Сервис, с которым у вас все получится</h2>
           <div class="advantages__sub-title section-header__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
@@ -230,7 +230,7 @@
           </div>
         </div>
       </div>
-      <section class="tariff">
+      <section class="tariff" id="tariff">
         <div class="container tariff__container">
           <h2 class="section-header tariff__section-tariff">Тарифы</h2>
           <div class="tariff__sub-title section-header__sub-title">Мы разработали универсальную систему тарифов, которая будет выгодна как для новичков, так и для крупного бизнеса</div>
@@ -285,16 +285,16 @@
                       <div class="calc-form__descr">Подходит для частых рассылок и зависит только от числа подписчиков в ваших адресных базах. Оплата раз в месяц.</div>
                       <div class="calc-form__subtitle">Количество писем</div>
                       <div class="calc-form__box">
-                        <div class="calc-form__btn" data-value="1000" data-price="5000">5000</div>
-                        <div class="calc-form__btn" data-value="2000" data-price="10000">10000</div>
-                        <div class="calc-form__btn toogle" data-value="3000" data-price="15000">15000</div>
-                        <div class="calc-form__btn" data-value="4000" data-price="20000">20000</div>
-                        <div class="calc-form__btn" data-value="5000" data-price="50000">50000</div>
-                        <div class="calc-form__btn" data-value="10000" data-price="100000">100000</div>
-                        <div class="calc-form__btn" data-value="15000" data-price="150000">150000</div>
-                        <div class="calc-form__btn" data-value="20000" data-price="200000">200000</div>
-                        <div class="calc-form__btn" data-value="25000" data-price="250000">250000</div>
-                        <div class="calc-form__btn" data-value="30000" data-price="500000">500000</div>
+                        <div class="calc-form__btn" data-value="1000" data-price="5000">до 5000</div>
+                        <div class="calc-form__btn" data-value="2000" data-price="10000">до 10000</div>
+                        <div class="calc-form__btn toogle" data-value="3000" data-price="15000">до 15000</div>
+                        <div class="calc-form__btn" data-value="4000" data-price="20000">до 20000</div>
+                        <div class="calc-form__btn" data-value="5000" data-price="50000">до 50000</div>
+                        <div class="calc-form__btn" data-value="10000" data-price="100000">до 100000</div>
+                        <div class="calc-form__btn" data-value="15000" data-price="150000">до 150000</div>
+                        <div class="calc-form__btn" data-value="20000" data-price="200000">до 200000</div>
+                        <div class="calc-form__btn" data-value="25000" data-price="250000">до 250000</div>
+                        <div class="calc-form__btn" data-value="30000" data-price="500000">до 500000</div>
                       </div>
                     </div>
                     <div class="calc__info calc-info">
@@ -362,9 +362,9 @@
       <div class="container footer__container">
         <div class="footer__top footer-top"><a class="footer-top__logo" href="#"><img src="../../img/logo-footer.png" alt=""></a>
           <ul class="footer-top__menu footer-menu">
-            <li class="footer-menu__item"><a class="footer-menu__link">Услуги</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link">Тарифы</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link">Способы оплаты</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Услуги</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Тарифы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Способы оплаты</a></li>
           </ul>
           <div class="footer-top__contacts"><a href="tel:+79257079442">+7 (925)707-94-42</a><a href="mailto:support@mailchip.ru">support@mailchip.ru</a></div>
         </div>
@@ -378,5 +378,8 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu">
+      <div class="mobile-menu__wrapper"></div>
+    </div>
   </body>
 </html>

@@ -1,5 +1,10 @@
 .tariff {
+	padding-top: var(--indentBlocks);
+	padding-bottom: var(--indentBlocks);
+
 	text-align: center;
+
+	background-color: var(--bg-color);
 }
 
 .tariff__container {
