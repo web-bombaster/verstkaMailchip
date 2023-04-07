@@ -19,7 +19,7 @@
 	background-image: url('../img/bg-call-to-action.jpg');
 	background-size: cover;
 	background-position: center;
-	border-radius: var(--brs6);
+	border-radius: var(--brs);
 
 	@media screen and (max-width: $break_sm) {
 		padding: 64px 25px;

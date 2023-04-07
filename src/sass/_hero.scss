@@ -43,14 +43,17 @@
 
 .hero__text {
     // margin-bottom: 135px;
-    margin-bottom: 22.7%;
 
-    @media (max-width: $break_md) {
-        margin-bottom: 50px;
-    }
+    .home & {
+        margin-bottom: 22.7%;
 
-    @media (max-width: $break_xs) {
-        margin-bottom: 25px;
+        @media (max-width: $break_md) {
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: $break_xs) {
+            margin-bottom: 25px;
+        }
     }
 }
 
@@ -91,7 +94,7 @@
 
 .hero__img {
     max-width: 600px;
-    width: 100%;
+    // width: 100%;
 
     @media (max-width: $break_lg) {
         max-width: 60%;
@@ -110,4 +113,33 @@
     @media (max-width: $break_xs) {
         max-width: 100%;
     }
+}
+
+.hero__price {
+    margin-top: 30px;
+
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    font-size: 18px;
+}
+.hero__price-count {
+    margin-left: 8px;
+    font-size: 30px;
+}
+.hero__price-descr {
+    margin-left: 8px;
+    font-size: 14px;
+
+    @media (max-width: $break_md) {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+.hero__footnote {
+    margin-top: 33px;
+
+    font-size: 14px;
+    color: var(---color-etxt-footer);
 }

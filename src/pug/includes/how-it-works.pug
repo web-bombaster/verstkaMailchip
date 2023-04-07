@@ -1,0 +1,56 @@
+//- how-it-works
+mixin how-it-worksItem(src, title, descr)
+	li.how-it-works__item.how-it-works-item
+		img(src="img/content/how-it-works/"+src loading="lazy" alt="").how-it-works-item__icon
+		.how-it-works-item__box
+			.how-it-works-item__title #{title}
+			.how-it-works-item__descr #{descr}
+
+
+
+
+.how-it-works#how-it-works
+	.container.how-it-works__container
+		h2.section-header.how-it-works__section-header Как это работает
+		ul.how-it-works__box
+
+			+how-it-worksItem(
+				'01.svg',
+				'Проконсультируем по запуску рассылки',
+				'Поможем определить целевую аудиторию. Обсудим цели и ожидаемые результаты от рассылок.',
+			)
+
+			+how-it-worksItem(
+				'02.svg',
+				'Сделаем технические настройки',
+				'Настроим Постмастер и почту отправителя: DKIM, DMARC, SPF. Установим на сайт форму',
+			)
+
+			+how-it-worksItem(
+				'03.svg',
+				'Загрузим базу',
+				'Выберем оптимальный тариф и импортируем базу. Проведем проверку адресов. Выделим сегменты с учетом задач email-маркетинга.',
+			)
+
+			+how-it-worksItem(
+				'04.svg',
+				'Создадим шаблон письма',
+				'Разработаем адаптивный шаблон в корпоративном стиле в конструкторе писем или с нуля. Вы сможете использовать его для будущих рассылок.',
+			)
+
+			+how-it-worksItem(
+				'05.svg',
+				'Запустим и проанализируем рассылку',
+				'Отправим письмо. Проверим открываемость, количество кликов и отписок.',
+			)
+
+			+how-it-worksItem(
+				'06.svg',
+				'Дадим рекомендации',
+				'Расскажем, как улучшить письмо и что делать дальше, чтобы наладить продажи через рассылки.',
+			)
+
+		.how-it-works__result
+			.how-it-works__result-title Результат
+			.how-it-works__result-descr
+				p Первая рассылка и набор рекомендаций, как внедрить email-маркетинг в компании. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud

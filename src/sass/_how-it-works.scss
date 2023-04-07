@@ -1,0 +1,130 @@
+.how-it-works {
+	padding-top: var(--indentBlocks);
+	padding-bottom: var(--indentBlocks);
+}
+
+.how-it-works__container {
+}
+
+.how-it-works__section-header {
+	margin-bottom: 5rem;
+
+	@media (max-width: $break_lg) {
+		margin-bottom: 5rem;
+	}
+
+	@media screen and (max-width: $break_sm) {
+		margin-bottom: 3.4rem;
+	}
+}
+.how-it-works__box {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+	gap: var(--mainGap);
+
+    @media (max-width: $break_md) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: $break_sm) {
+
+            grid-template-columns: 1fr;
+
+            width: 100%;
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+    }
+
+    @media (max-width: $break_xs) {
+        max-width: 100%;
+    }
+}
+.how-it-works__item {
+
+}
+
+.how-it-works-item {
+    padding: 40px 36px;
+
+    border: 1px solid #222831;
+    border-radius: var(--brs);
+}
+
+.how-it-works-item__box {
+
+}
+.how-it-works-item__title {
+	margin-bottom: 10px;
+
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.2;
+}
+.how-it-works-item__descr {
+	margin-bottom: 10px;
+
+	@media (max-width: $break_sm) {
+		margin-bottom: 27px;
+	}
+}
+.how-it-works-item__icon {
+    margin-bottom: 30px;
+
+	display: block;
+	width: auto;
+	height: 45px;
+}
+
+.how-it-works__result {
+    margin-top: 50px;
+    padding: 45px;
+
+    display: flex;
+    gap: 76px;
+
+    border-radius: var(--brs);
+    background-image: url('../img/bg-how-it-works-result.jpg');
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width: $break_md) {
+        gap: 50px;
+    }
+
+    @media (max-width: $break_sm) {
+        flex-direction: column;
+        gap: 20px;
+
+		width: 100%;
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+    }
+
+	@media (max-width: $break_xs) {
+		max-width: 100%;
+	}
+}
+.how-it-works__result-title {
+    font-size: 36px;
+    font-weight: 500;
+
+	@media screen and (max-width: $break_lg) {
+		font-size: 3.2rem;
+	}
+
+	@media screen and (max-width: $break_md) {
+		font-size: 2.6rem;
+	}
+}
+.how-it-works__result-descr {
+    max-width: 756px;
+
+    p {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
