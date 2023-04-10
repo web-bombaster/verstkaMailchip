@@ -13,64 +13,378 @@
   <body>
     <div class="visible" id="preloader"></div>
     <main>
-      <header class="header">
-        <div class="container header__container">
-          <div class="header__box">
-            <button class="header__menu-btn burger__menu-btn js-burger jsMobileMenuBtnToggle"><span></span></button><a class="header__logo" href="/"><img src="img/logo.png" alt=""></a>
-            <nav class="header__nav" data-da="mobile-menu__wrapper,1,768">
-              <ul class="header__menu header__menu menu">
-                <li class="menu__item"><a class="menu-link" href="#services">Услуги</a></li>
-                <li class="menu__item"><a class="menu-link" href="#instruction">О сервисе</a></li>
-                <li class="menu__item"><a class="menu-link" href="#tariff">Тарифы</a></li>
-                <li class="menu__item"><a class="menu-link" href="#advantages">Преимущества</a></li>
-              </ul>
-            </nav>
-            <div class="header__cantacts"><a class="header__mail" href="mailto:support@mailchip.ru">support@mailchip.ru</a><a class="header__btn btn btn--accent-transparent">Вход</a></div>
+      <div class="first-screen">
+        <header class="header">
+          <div class="container header__container">
+            <div class="header__box">
+              <button class="header__menu-btn burger__menu-btn js-burger jsMobileMenuBtnToggle"><span></span></button><a class="header__logo" href="/"><img src="img/logo.png" alt=""></a>
+              <nav class="header__nav" data-da="mobile-menu__wrapper,1,768">
+                <ul class="header__menu header__menu menu">
+                  <li class="menu__item"><a class="menu-link" href="#services">Услуги</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#instruction">О сервисе</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#tariff">Тарифы</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#advantages">Преимущества</a></li>
+                </ul>
+              </nav>
+              <div class="header__cantacts"><a class="header__mail" href="mailto:support@mailchip.ru">support@mailchip.ru</a><a class="header__btn btn btn--accent-transparent">Вход</a></div>
+            </div>
+          </div>
+        </header>
+        <div class="hero home">
+          <div class="container hero__container">
+            <div class="hero__box">
+              <div class="hero__info">
+                <div class="hero__text">
+                  <h1 class="hero__title section-header">MailChip — универсальная и быстрая рассылка писем</h1>
+                  <div class="hero__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                  <button class="hero__btn btn btn--accent">Попробовать бесплатно</button>
+                </div>
+                <div class="hero__integration">Интеграция:<span>Tilda</span><span>LP Generator</span></div>
+              </div><img class="hero__img" src="img/content/hero.png" loading="lazy" alt="">
+            </div>
           </div>
         </div>
-      </header>
-      <div class="breadcrumbs">
-        <div class="container breadcrumbs__container"><a class="breadcrumbs__link back" href="#">Назад</a></div>
       </div>
-      <div class="our-services">
-        <div class="container our-services__container">
-          <h1 class="section-header our-services__section-header">Услуги</h1>
-          <div class="our-services__box services-box">
-            <div class="services-box__item services-item">
-              <div class="services-item__title">Комплексные услуги</div>
-              <ul>
-                <li><a href="#">Email-рассылка с нуля</a></li>
-                <li><a href="#">Ежемесячное ведение рассылок</a></li>
-                <li><a href="#">Настройка рассылки</a></li>
+      <div class="instruction" id="instruction">
+        <div class="container instruction__container">
+          <h2 class="section-header instruction__section-header">15 минут и рассылка готова</h2>
+          <ul class="instruction__box">
+                  <li class="instruction__item instruction-item">
+                    <div class="instruction-item__box">
+                      <div class="instruction-item__title">Загрузите базу email-адресов</div>
+                      <div class="instruction-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                    </div><img class="instruction-item__icon" src="img/content/instruction-icons/01.svg" loading="lazy" alt="">
+                  </li>
+                  <li class="instruction__item instruction-item">
+                    <div class="instruction-item__box">
+                      <div class="instruction-item__title">Создайте письмо в простом конструкторе</div>
+                      <div class="instruction-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                    </div><img class="instruction-item__icon" src="img/content/instruction-icons/02.svg" loading="lazy" alt="">
+                  </li>
+                  <li class="instruction__item instruction-item">
+                    <div class="instruction-item__box">
+                      <div class="instruction-item__title">Отправьте email и следите за результатами</div>
+                      <div class="instruction-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                    </div><img class="instruction-item__icon" src="img/content/instruction-icons/03.svg" loading="lazy" alt="">
+                  </li>
+          </ul>
+        </div>
+      </div>
+      <div class="services" id="services">
+        <div class="container services__container">
+          <div class="services__box">
+            <div class="services__col-one">
+              <h2 class="section-header services__section-header">Чем мы<br>можем помочь</h2>
+              <div class="services__img"><img src="img/content/services.jpg" loading="lazy" alt=""></div>
+            </div>
+            <div class="services__col-two">
+              <ul class="services__list services-list">
+                <li class="services-list__item">
+                  <div class="services-list__title">Комплексные услуги</div>
+                  <div class="services-list__descr">
+                    <ul>
+                      <li><a href="#">Email-рассылка с нуля</a></li>
+                      <li><a href="#">Ежемесячное ведение рассылок</a></li>
+                      <li><a href="#">Настройка рассылки</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="services-list__item">
+                  <div class="services-list__title">Разовые услуги</div>
+                  <div class="services-list__descr">
+                    <ul>
+                      <li><a href="#">Аудит рассылок</a></li>
+                      <li><a href="#">Выход из спама</a></li>
+                      <li><a href="#">Автоматическая серия писем</a></li>
+                      <li><a href="#">Реанимация базы</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="services-list__item">
+                  <div class="services-list__title">Шаблоны писем</div>
+                  <div class="services-list__descr">
+                    <ul>
+                      <li><a href="#">Создадим шаблон письма</a></li>
+                      <li><a href="#">Заказать верстку письма</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="services-list__item">
+                  <div class="services-list__title">Помощь в работе</div>
+                  <div class="services-list__descr">
+                    <ul>
+                      <li><a href="#">Аутентификация</a></li>
+                      <li><a href="#">Настройка корпоративной почты</a></li>
+                      <li><a href="#">Настройка форм подписки</a></li>
+                    </ul>
+                  </div>
+                </li>
               </ul>
             </div>
-            <div class="services-box__item services-item">
-              <div class="services-item__title">Разовые услуги</div>
-              <ul>
-                <li><a href="#">Аудит рассылок</a></li>
-                <li><a href="#">Выход из спама</a></li>
-                <li><a href="#">Автоматическая серия писем</a></li>
-                <li><a href="#">Реанимация базы</a></li>
-              </ul>
-            </div>
-            <div class="services-box__item services-item">
-              <div class="services-item__title">Шаблоны писем</div>
-              <ul>
-                <li><a href="#">Создадим шаблон письма</a></li>
-                <li><a href="#">Заказать верстку письма</a></li>
-              </ul>
-            </div>
-            <div class="services-box__item services-item">
-              <div class="services-item__title">Помощь в работе</div>
-              <ul>
-                <li><a href="#">Аутентификация</a></li>
-                <li><a href="#">Настройка корпоративной почты</a></li>
-                <li><a href="#">Настройка форм подписки</a></li>
-              </ul>
-            </div>
-            <div class="services-box__item services-item decor"></div>
           </div>
         </div>
+      </div>
+      <div class="features">
+        <div class="container features__container">
+          <div class="features__box">
+            <div class="features__item features-item">
+              <div class="features-item__box">
+                <div class="features-item__info">
+                  <div class="features-item__title section-header" data-da="js-fh01,1,768">Создавайте автоматические триггерные рассылки</div>
+                  <div class="features-item__descr">Приветствуйте и отправляйте бонусы за подписку, напоминайте о брошенных корзинах, благодарите за заказ или отправляйте чеки на основе действий пользователя.</div><a class="features-item__btn btn" href="#">Создать рассылку</a>
+                </div>
+                <div class="features-item__img">
+                  <div class="features-item__header-mobile js-fh01"></div><img src="img/content/features-01.png" loading="lazy" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="features__item features-item">
+              <div class="features-item__box">
+                <div class="features-item__info">
+                  <div class="features-item__title section-header" data-da="js-fh02,1,768">Анализируйте эффективность рассылок</div>
+                  <div class="features-item__descr">Получение API ключа. Параметры для отправки по SMTP. Статистика. Уникальные переходы,отписались. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div><a class="features-item__btn btn" href="#">Подключить API</a>
+                </div>
+                <div class="features-item__img">
+                  <div class="features-item__header-mobile js-fh02"></div><img src="img/content/features-02.png" loading="lazy" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="advantages" id="advantages">
+        <div class="container advantages__container">
+          <h2 class="section-header advantages__section-header">Сервис, с которым у вас все получится</h2>
+          <div class="advantages__sub-title section-header__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+          <div class="advantages__slider swiper jsAdvantagesSlider">
+            <div class="advantages__box swiper-wrapper">
+              <div class="advantages__item advantages-item advantages-item--yellow swiper-slide"><img class="advantages-item__icon" src="img/advantages/01.svg" loading="lazy" alt="">
+                <div class="advantages-item__title">Универсальность рассылки</div>
+                <div class="advantages-item__descr">Мы используем самые лучшие инструменты, которые помогают решать все задачи email-маркетинга. Занимаемся всеми видами рассылок.</div>
+              </div>
+              <div class="advantages__item advantages-item advantages-item--orange swiper-slide"><img class="advantages-item__icon" src="img/advantages/02.svg" loading="lazy" alt="">
+                <div class="advantages-item__title">Адаптивность писем</div>
+                <div class="advantages-item__descr">Наши рассылки одинаково хорошо открываются на любых устройствах (компьютер, телефон, планшет).</div>
+              </div>
+              <div class="advantages__item advantages-item advantages-item--blue swiper-slide"><img class="advantages-item__icon" src="img/advantages/03.svg" loading="lazy" alt="">
+                <div class="advantages-item__title">Стоимость услуг</div>
+                <div class="advantages-item__descr">У нас отличное соотношение цены и качества предоставляемых услуг. Система понижения цен, в зависимости от объёма работы.</div>
+              </div>
+            </div>
+            <div class="advantages-pagination"></div>
+          </div><a class="btn btn--accent">Зарегистрироваться</a>
+        </div>
+      </div>
+      <div class="reviews">
+        <div class="container reviews__container">
+          <h2 class="section-header reviews__section-header">Что о нас говорят</h2>
+          <div class="reviews__box">
+            <div class="swiper jsReviewsSlider">
+              <div class="reviews__wrapper swiper-wrapper">
+                <div class="reviews__item reviews-item swiper-slide">
+                  <div class="reviews-item__info">
+                    <div class="reviews-item__icon">А</div>
+                    <div class="reviews-item__user">
+                      <div class="reviews-item__name">Александра Р. </div>
+                      <div class="reviews-item__post">Маркетолог</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                </div>
+                <div class="reviews__item reviews-item swiper-slide">
+                  <div class="reviews-item__info">
+                    <div class="reviews-item__icon">В</div>
+                    <div class="reviews-item__user">
+                      <div class="reviews-item__name">Виктор</div>
+                      <div class="reviews-item__post">Маркетолог</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+                <div class="reviews__item reviews-item swiper-slide">
+                  <div class="reviews-item__info">
+                    <div class="reviews-item__icon">А</div>
+                    <div class="reviews-item__user">
+                      <div class="reviews-item__name">Александра Р. </div>
+                      <div class="reviews-item__post">Маркетолог</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                </div>
+                <div class="reviews__item reviews-item swiper-slide">
+                  <div class="reviews-item__info">
+                    <div class="reviews-item__icon">В</div>
+                    <div class="reviews-item__user">
+                      <div class="reviews-item__name">Виктор</div>
+                      <div class="reviews-item__post">Маркетолог</div>
+                    </div>
+                  </div>
+                  <div class="reviews-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper__prev reviews__prev"></div>
+            <div class="swiper__next reviews__next"></div>
+            <div class="reviews-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <section class="tariff" id="tariff">
+        <div class="container tariff__container">
+          <h2 class="section-header tariff__section-tariff">Тарифы</h2>
+          <div class="tariff__sub-title section-header__sub-title">Мы разработали универсальную систему тарифов, которая будет выгодна как для новичков, так и для крупного бизнеса</div>
+          <div class="tabs">
+            <div class="tabs__btns tabs-btns">
+              <button class="btn tabs-btns__item tab-btn-item toggle">Количество контактов</button>
+              <button class="btn btn--transparent tabs-btns__item tab-btn-item">Количество писем</button>
+            </div>
+            <div class="tabs__content tabs-content">
+              <div class="tabs-content__item tabs-content-item toggle">
+                <div class="calc js-calc-one">
+                  <div class="calc__box">
+                    <div class="calc__form calc-form">
+                      <h3 class="calc-form__title">Цена зависит от количества контактов</h3>
+                      <div class="calc-form__descr">Подходит для частых рассылок и зависит только от числа подписчиков в ваших адресных базах. Оплата раз в месяц.</div>
+                      <div class="calc-form__subtitle">Период</div>
+                      <div class="calc-form__box">
+                        <div class="calc-form__btn time toogle" data-value="1" data-type="time">1 месяц</div>
+                        <div class="calc-form__btn time" data-value="3" data-type="time">3 месяца</div>
+                        <div class="calc-form__btn time" data-value="6" data-type="time">6 месяцев</div>
+                        <div class="calc-form__btn time" data-value="12" data-type="time">1 год</div>
+                      </div>
+                      <div class="calc-form__subtitle">Количество подписчиков</div>
+                      <div class="calc-form__box">
+                        <div class="calc-form__btn subscribers toogle" data-value="1000" data-type="subscribers">до 1000</div>
+                        <div class="calc-form__btn subscribers" data-value="1500" data-type="subscribers">до 1500</div>
+                        <div class="calc-form__btn subscribers" data-value="2000" data-type="subscribers">до 2000</div>
+                        <div class="calc-form__btn subscribers" data-value="3000" data-type="subscribers">до 3000</div>
+                        <div class="calc-form__btn subscribers" data-value="4000" data-type="subscribers">до 4000</div>
+                        <div class="calc-form__btn subscribers" data-value="5000" data-type="subscribers">до 5000</div>
+                        <div class="calc-form__btn subscribers" data-value="6000" data-type="subscribers">до 6000</div>
+                      </div>
+                    </div>
+                    <div class="calc__info calc-info">
+                      <h3 class="calc-info__title">Что входит в пакет:</h3>
+                      <div class="calc-info__descr">
+                        <ul>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing eli</li>
+                          <li>Lorem ipsum dolor sit amet,</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur</li>
+                        </ul>
+                      </div><span class="calc-info__price js-price-subscribers">900₽</span><span>в месяц</span>
+                    </div>
+                  </div>
+                  <div class="calc__tarifs calc-tarifs">
+                    <div class="calc-tarifs__item" data-value="time-1-subscribers-1000" data-price="450"></div>
+                    <div class="calc-tarifs__item" data-value="time-1-subscribers-1500" data-price="660"></div>
+                    <div class="calc-tarifs__item" data-value="time-1-subscribers-2000" data-price="800"></div>
+                    <div class="calc-tarifs__item" data-value="time-1-subscribers-3000" data-price="900"></div>
+                    <div class="calc-tarifs__item" data-value="time-1-subscribers-4000" data-price="1120"></div>
+                    <div class="calc-tarifs__item" data-value="time-1-subscribers-5000" data-price="1300"></div>
+                    <div class="calc-tarifs__item" data-value="time-1-subscribers-6000" data-price="1440"></div>
+                    <div class="calc-tarifs__item" data-value="time-3-subscribers-1000" data-price="1215"></div>
+                    <div class="calc-tarifs__item" data-value="time-3-subscribers-1500" data-price="1782"></div>
+                    <div class="calc-tarifs__item" data-value="time-3-subscribers-2000" data-price="2160"></div>
+                    <div class="calc-tarifs__item" data-value="time-3-subscribers-3000" data-price="2430"></div>
+                    <div class="calc-tarifs__item" data-value="time-3-subscribers-4000" data-price="3024"></div>
+                    <div class="calc-tarifs__item" data-value="time-3-subscribers-5000" data-price="3510"></div>
+                    <div class="calc-tarifs__item" data-value="time-3-subscribers-6000" data-price="3888"></div>
+                    <div class="calc-tarifs__item" data-value="time-6-subscribers-1000" data-price="2160"></div>
+                    <div class="calc-tarifs__item" data-value="time-6-subscribers-1500" data-price="3168"></div>
+                    <div class="calc-tarifs__item" data-value="time-6-subscribers-2000" data-price="3840"></div>
+                    <div class="calc-tarifs__item" data-value="time-6-subscribers-3000" data-price="4320"></div>
+                    <div class="calc-tarifs__item" data-value="time-6-subscribers-4000" data-price="5376"></div>
+                    <div class="calc-tarifs__item" data-value="time-6-subscribers-5000" data-price="6240"></div>
+                    <div class="calc-tarifs__item" data-value="time-6-subscribers-6000" data-price="6912"></div>
+                    <div class="calc-tarifs__item" data-value="time-12-subscribers-1000" data-price="3780"></div>
+                    <div class="calc-tarifs__item" data-value="time-12-subscribers-1500" data-price="5544"></div>
+                    <div class="calc-tarifs__item" data-value="time-12-subscribers-2000" data-price="6720"></div>
+                    <div class="calc-tarifs__item" data-value="time-12-subscribers-3000" data-price="7560"></div>
+                    <div class="calc-tarifs__item" data-value="time-12-subscribers-4000" data-price="9408"></div>
+                    <div class="calc-tarifs__item" data-value="time-12-subscribers-5000" data-price="10920"></div>
+                    <div class="calc-tarifs__item" data-value="time-12-subscribers-6000" data-price="12096"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-content__item tabs-content-item">
+                <div class="calc js-calc-two">
+                  <div class="calc__box">
+                    <div class="calc__form calc-form">
+                      <h3 class="calc-form__title">Цена зависит от количества отправляемых писем</h3>
+                      <div class="calc-form__descr">Подходит для частых рассылок и зависит только от числа подписчиков в ваших адресных базах. Оплата раз в месяц.</div>
+                      <div class="calc-form__subtitle">Количество писем</div>
+                      <div class="calc-form__box">
+                        <div class="calc-form__btn toogle" data-value="5000" data-price="1000">до 5000</div>
+                        <div class="calc-form__btn" data-value="10000" data-price="2000">до 10000</div>
+                        <div class="calc-form__btn" data-value="15000" data-price="3000">до 15000</div>
+                        <div class="calc-form__btn" data-value="20000" data-price="4000">до 20000</div>
+                        <div class="calc-form__btn" data-value="50000" data-price="5000">до 50000</div>
+                        <div class="calc-form__btn" data-value="100000" data-price="10000">до 100000</div>
+                        <div class="calc-form__btn" data-value="150000" data-price="15000">до 150000</div>
+                        <div class="calc-form__btn" data-value="200000" data-price="20000">до 200000</div>
+                        <div class="calc-form__btn" data-value="250000" data-price="25000">до 250000</div>
+                        <div class="calc-form__btn" data-value="500000" data-price="30000">до 500000</div>
+                      </div>
+                    </div>
+                    <div class="calc__info calc-info">
+                      <h3 class="calc-info__title">Что входит в пакет:</h3>
+                      <div class="calc-info__descr">
+                        <ul>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing eli</li>
+                          <li>Lorem ipsum dolor sit amet,</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur</li>
+                        </ul>
+                      </div><span class="calc-info__price js-price-letters">900₽</span><span>в месяц</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="faq">
+        <div class="container faq__container">
+          <h2 class="section-header faq__section-header">Часто задаваемые вопросы</h2>
+          <ul class="faq__list faq-list">
+            <li class="faq-list__item">
+              <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку?</div>
+              <div class="faq-list__descr accordeon-descr">
+                <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
+              </div>
+            </li>
+            <li class="faq-list__item">
+              <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку? Как быстро можно запустить email-рассылку?</div>
+              <div class="faq-list__descr accordeon-descr">
+                <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
+              </div>
+            </li>
+            <li class="faq-list__item">
+              <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку?</div>
+              <div class="faq-list__descr accordeon-descr">
+                <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
+              </div>
+            </li>
+            <li class="faq-list__item">
+              <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку?</div>
+              <div class="faq-list__descr accordeon-descr">
+                <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
+              </div>
+            </li>
+            <li class="faq-list__item">
+              <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку?</div>
+              <div class="faq-list__descr accordeon-descr">
+                <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="call-to-action">
+        <div class="container call-to-action__container"><a class="call-to-action__box" href="#">
+            <h2 class="call-to-action__title section-header call-to-action__section-header">Создайте рассылку в MailChip за считанные минуты </h2>
+            <div class="call-to-action__descr">Начните с нами улучшать свой маркетинг прямо сейчас!</div>
+            <button class="call-to-action__btn btn btn--accent">Зарегистрироваться</button></a></div>
       </div>
     </main>
     <footer class="footer">
