@@ -8,7 +8,7 @@
 include ../includes/mixins
 
 //- Для pageType указать тип страницы
-- var pageType = 'servicesItem';
+- var pageType = 'about';
 
 
 //- home - главная страница
@@ -19,6 +19,10 @@ if pageType === 'home'
 if pageType === 'servicesItem'
 	include servicesItem
 
+
+//- about - О компании
+if pageType === 'about'
+	include about
 
 //- services
 
