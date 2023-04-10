@@ -174,3 +174,21 @@
 		}
 	}
 }
+
+.footer-seo {
+	margin-top: 30px;
+
+	display: flex;
+	align-items: center;
+	gap: 15px;
+
+	color: #fff;
+}
+.footer-seo__img {
+	width: 60px;
+		height: 60px;
+	// svg {
+	// 	width: 60px;
+	// 	height: 60px;
+	// }
+}
