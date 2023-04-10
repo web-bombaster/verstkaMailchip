@@ -54,6 +54,20 @@ function initSwiper() {
 			},
 		});
 	};
+
+	if (document.querySelector('.jsCasesSlider')) {
+		const jsReviewsSlider = new Swiper('.jsCasesSlider', {
+			spaceBetween: 20,
+			slidesPerView: 1,
+			autoHeight: false,
+			loop: true,
+
+			navigation: {
+				nextEl: ".cases__next",
+				prevEl: ".cases__prev",
+			},
+		});
+	};
 };
 
 // window.addEventListener("resize", initSwiper);
