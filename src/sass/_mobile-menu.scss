@@ -24,6 +24,10 @@
 
     transition: transform .25s;
 
+    @media (max-width: $break_xs) {
+        max-width: 100%;
+    }
+
 
 
     &.toggle {

@@ -11,6 +11,7 @@
 
 html,
 body {
+	width: 100%;
 	margin: 0;
 	padding: 0;
 
@@ -27,6 +28,7 @@ body {
 	display: flex;
 	flex-direction: column;
 
+	width: 100%;
 	min-width: 32rem;
 	min-height: 100vh;
 	overflow-x: hidden;
@@ -61,6 +63,22 @@ body {
 	@media screen and (max-width: $break_md) {
 		padding: 0 1.5rem;
 	}
+}
+
+.pt0 {
+	padding-top: 0;
+}
+
+.pb0 {
+	padding-bottom: 0;
+}
+
+.mt0 {
+	margin-top: 0;
+}
+
+.mb0 {
+	margin-bottom: 0;
 }
 
 a {

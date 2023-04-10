@@ -1,15 +1,35 @@
 .header {
     padding-top: 20px;
     padding-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px #DFE4F3;
+    background-color: #fff;
 
     @media (max-width: $break_md) {
-        width: 100%;
 
-        position: fixed;
-        z-index: 100;
+        // width: 100%;
+        // position: fixed;
+        // z-index: 100;
 
         background-color: #fff;
         box-shadow: 0px 0px 4px 0px #cacaca;
+    }
+
+    .first-screen & {
+        box-shadow: none;
+        background-color: transparent;
+
+        @media (max-width: $break_md) {
+            background-color: #fff;
+        }
+    }
+
+    &.active {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+
+        background-color: #fff;
     }
 }
 

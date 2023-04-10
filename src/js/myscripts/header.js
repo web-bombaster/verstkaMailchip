@@ -1,12 +1,19 @@
 const headerFixed = () => {
-    if (document.documentElement.clientWidth <= 992) {
-        const heightHeader = document.querySelector('.header').offsetHeight; // высота хедера
-        document.body.style.paddingTop = heightHeader + 'px';
+    const header = document.querySelector('.header');
+    const heightHeader = header.offsetHeight; // высота хедера
+    let posTop = window.pageYOffset; // позиция прокрутки
+    console.log(posTop);
+
+    if (posTop > 0) {
+        header.classList.add('active');
+        header.parentElement.style.paddingTop = heightHeader + 'px';
     } else {
-        document.body.style.paddingTop = 0;
-    }
+        header.classList.remove('active');
+        header.parentElement.style.paddingTop = 'inherit';
+    };
 };
 
 headerFixed();
 // запускаем headerFixed при ресайзе
 window.addEventListener("resize", headerFixed);
+window.addEventListener('scroll', headerFixed);

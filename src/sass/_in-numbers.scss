@@ -1,0 +1,52 @@
+.in-numbers {
+    margin-top: 105px;
+
+    @media (max-width: $break_sm) {
+        margin-top: 30px;
+    }
+}
+.in-numbers__container {
+}
+
+.in-numbers__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+	@media screen and (max-width: $break_sm) {
+        grid-template-columns: 1fr;
+
+		max-width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media screen and (max-width: $break_xs) {
+        max-width: 100%;
+	}
+}
+
+.in-numbers__item {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    font-size: 43px;
+    font-weight: 500;
+    line-height: 1;
+
+	@media screen and (max-width: $break_lg) {
+		font-size: 3.2rem;
+	}
+
+	@media screen and (max-width: $break_md) {
+		font-size: 2.6rem;
+	}
+
+    span {
+        margin-top: 5px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+}

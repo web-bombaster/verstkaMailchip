@@ -22,6 +22,10 @@
 	@media (max-width: $break_sm) {
 		padding: 15px 20px;
 	}
+
+	@media (max-width: 320px) {
+		padding: 10px 15px;
+	}
 }
 
 .tabs__content {
