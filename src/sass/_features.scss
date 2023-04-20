@@ -14,6 +14,9 @@
 	}
 }
 .features__item {
+	@media (max-width: $break_xs) {
+		text-align: center;
+	}
 }
 .features-item {
 	&:nth-child(2n) {
@@ -49,6 +52,11 @@
 .section-header {
 }
 .features-item__descr {
+	font-size: 18px;
+
+	@media (max-width: $break_xs) {
+		font-size: 16px;
+	}
 }
 .features-item__btn {
 	@media screen and (max-width: $break_sm) {

@@ -56,12 +56,12 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 130rem;
+	max-width: 136rem;
 	margin: 0 auto;
 	padding: 0 3rem;
 
 	@media screen and (max-width: $break_md) {
-		padding: 0 1.5rem;
+		padding: 0 2.5rem;
 	}
 }
 
@@ -156,6 +156,14 @@ ul:not([class]) {
 
 	@media screen and (max-width: $break_md) {
 		font-size: 2.6rem;
+	}
+
+	@media (max-width: $break_xs) {
+		text-align: center;
+
+		br {
+			display: none;
+		}
 	}
 }
 

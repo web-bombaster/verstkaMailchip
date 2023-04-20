@@ -9,6 +9,10 @@
 .reviews__section-header {
 	text-align: center;
 	margin-bottom: 50px;
+
+	@media (max-width: $break_xs) {
+		margin-bottom: 25px;
+	}
 }
 .reviews__box {
 	position: relative;
