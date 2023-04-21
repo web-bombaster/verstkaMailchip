@@ -1,0 +1,22 @@
+#modal-01.modal
+	.modal__inner
+		.modal__content
+			form.contacts__form.form(action='#' method='post')
+				h2.form__title Записаться на прием
+				.form__inner
+					input#name.form__name(type='text' name='name')
+					label(for='name') Имя
+				.form__inner
+					input#phone.form__phone(type='tel' name='phone')
+					label(for='phone') Телефон
+				.form__inner
+					input#mail.form__email(type='email' name='mail')
+					label(for='mail') Email
+				.form__inner
+					textarea#message(name='message')
+					label(for='message') Сообщение
+				.form__checkbox
+					label(for='agreement')
+						input#agreement.form__agreement(name='agreement' type='checkbox' required='' checked='')
+						| Политике конфиденциальности
+				button.form__btn.btn(type='submit') Отправить

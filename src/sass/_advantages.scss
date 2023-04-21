@@ -85,7 +85,7 @@
 	height: auto !important;
 
 
-	padding: 40px 40px 44px;
+	padding: 40px 40px 60px;
 	border-radius: var(--brs);
 
 	background-color: #2E343D;
@@ -140,8 +140,10 @@
 
 	font-size: 20px;
 	font-weight: 600;
+	line-height: 1.2;
 }
 .advantages-item__descr {
+	font-size: 15px;
 	color: #7C7E82;
 }
 .advantages-item--orange {

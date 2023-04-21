@@ -71,7 +71,7 @@
     }
 }
 .cases-list__info {
-    padding: 46px 60px;
+    padding: 36px 64px 84px;
 
     background-color: var(--bg-color);
     border-radius: var(--brs);
@@ -99,5 +99,9 @@
         &::before {
             display: none;
         }
+    }
+
+    strong {
+        font-size: 18px;
     }
 }

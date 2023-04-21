@@ -1,12 +1,16 @@
 .accordeon-title {
 	position: relative;
 	cursor: pointer;
-	padding-right: 44px;
+	padding-right: 58px;
+
+	@media screen and (max-width: $break_sm) {
+		padding-right: 32px;
+	}
 
 	&::after {
 		position: absolute;
 		content: '';
-		right: 20px;
+		right: 36px;
 		top: 50%;
 		transform: translateY(-50%);
 

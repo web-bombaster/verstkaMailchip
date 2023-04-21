@@ -7,11 +7,11 @@
 }
 .block-img-text__box {
     display: flex;
-    // align-items: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 100px;
 
     @media (max-width: $break_md) {
+        align-items: flex-start;
         gap: 40px;
     }
 
@@ -102,6 +102,11 @@
 
 .block-img-text__info {
     max-width: 505px;
+    font-size: 18px;
+
+    @media (max-width: $break_sm) {
+        font-size: 16px;
+    }
 }
 .block-img-text__section-header {
     margin-bottom: 20px;

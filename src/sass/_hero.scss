@@ -1,8 +1,16 @@
 .hero {
-    padding-top: 80px;
+    padding-top: 34px;
 
-    @media (max-width: $break_xs) {
-        padding-top: 40px;
+    &.home {
+        padding-top: 80px;
+
+        @media (max-width: $break_xs) {
+            padding-top: 40px;
+        }
+    }
+
+    @media (max-width: $break_sm) {
+        padding-top: 60px;
     }
 }
 
@@ -65,6 +73,12 @@
 }
 
 .hero__title {
+    margin-bottom: 19px;
+
+    .home & {
+        margin-bottom: 25px;
+    }
+
     max-width: 554px;
 
     @media (max-width: $break_xs) {
@@ -84,7 +98,11 @@
 }
 
 .hero__btn {
-    margin-top: 44px;
+    margin-top: 28px;
+
+    .home & {
+        margin-top: 44px;
+    }
 
     @media (max-width: $break_xs) {
         margin-top: 25px;
@@ -134,13 +152,17 @@
 }
 
 .hero__price {
-    margin-top: 30px;
+    margin-top: 24px;
 
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
 
     font-size: 18px;
+
+    @media (max-width: $break_xs) {
+        justify-content: center;
+    }
 }
 .hero__price-count {
     margin-left: 8px;
