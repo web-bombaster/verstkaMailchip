@@ -1,0 +1,20 @@
+form(action="#" method="post").help__form.form
+
+	.form__title Есть вопросы?
+
+	.input-wrapper
+		input#email.form__email(type='email' name='email' placeholder='E-mail')
+
+	.input-wrapper
+		input#phone.form__phone(type='tel' name='phone' placeholder='Номер телефона')
+
+	.input-wrapper
+		textarea#message(name='message' placeholder='Напишите ваш вопрос').form__message
+
+	button.form__btn.btn.btn--accent.btn--grren(type='submit') Отправить
+
+	.input-wrapper.agreement
+		label(for='agreement').agreement__label
+			input#agreement.form__agreement(name='agreement' type='checkbox' required='' checked='')
+			| Я принимаю условия&nbsp;
+			a(href='#') политики конфиденцианольности

@@ -6,7 +6,7 @@ document.addEventListener(
 		// include './myscripts/header.js'
 		// include './myscripts/mobile-menu.js'
 		// -include './myscripts/scroll.js'
-		// -include './myscripts/form.js'
+		// include './myscripts/form.js'
 		// include './myscripts/initSwiper.js'
 		// include './myscripts/accordeon.js'
 		// include './myscripts/tabs.js'

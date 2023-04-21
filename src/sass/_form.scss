@@ -21,21 +21,24 @@
 	}
 
 	input {
-		margin-bottom: 15px;
-		padding: 21px 23px;
+		margin-bottom: 20px;
+		padding: 18px 23px;
 		width: 100%;
 
-		font-family: 'Inter', sans-serif;
+		font-family: var(--font-family);
 
+		border-radius: 10px;
 		background-color: #F2F2F2;
 		border: none;
 	}
 
 	textarea {
-		margin-bottom: 15px;
-		padding: 21px 23px;
+		margin-bottom: 20px;
+		padding: 18px 23px;
 		width: 100%;
-		min-height: 130px;
+		min-height: 136px;
+
+		border-radius: 10px;
 		background-color: #F2F2F2;
 		border: none;
 		resize: vertical;
@@ -51,10 +54,10 @@
 }
 
 .form__title {
+	margin-top: 0;
 	margin-bottom: 23px;
 
-	font-family: 'Raleway', sans-serif;
-	font-size: 32px;
+	font-size: 36px;
 	font-weight: 600;
 
 	@media (max-width: $break_lg) {
@@ -75,14 +78,29 @@
 .form__btn {
 	// margin-top: 15px;
 	margin-top: 0;
-	padding: 21px 70px;
+	margin-bottom: 15px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	// padding: 18px 70px;
 
-	font-family: 'Inter', sans-serif;
+	font-family: var(--font-family);
+
+	&[data-just-validate-fallback-disabled=false] {
+		opacity: .5;
+	}
 }
+
+
 
 .agreement__label {
 	position: relative;
-	font-size: 14px;
+	font-size: 13px;
+
+	color: var(---color-etxt-footer);
+
+	a {
+		color: var(---color-etxt-footer);
+	}
 }
 
 .just-validate-error-label {
