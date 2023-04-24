@@ -11,16 +11,263 @@
     <script src="js/scripts.min.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Верстка сайта «MailChip – универсальная и быстрая рассылка писем»:</h1>
-      <div class="index">
-        <p class="info">Если страничка отображается криво, обновляем ее через CTRL + F5!</p>
-        <p><a href="home.html" target="_blank">home - Главная</a></p>
-        <p><a href="services.html" target="_blank">services - Услуги</a></p>
-        <p><a href="servicesItem.html" target="_blank">servicesItem - детальная страница услуги</a></p>
-        <p><a href="about.html" target="_blank">about - О компании</a></p>
-        <p><a href="tarifs.html" target="_blank">tarifs - Тарифы</a></p>
+    <div class="visible" id="preloader"></div>
+    <main>
+      <div class="first-screen">
+        <header class="header">
+          <div class="container header__container">
+            <div class="header__box">
+              <button class="header__menu-btn burger__menu-btn js-burger jsMobileMenuBtnToggle"><span></span></button><a class="header__logo" href="/"><img src="img/logo.png" alt=""></a>
+              <nav class="header__nav" data-da="mobile-menu__wrapper,1,768">
+                <ul class="header__menu header__menu menu">
+                  <li class="menu__item"><a class="menu-link" href="#">Услуги</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#">О компании</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#">Тарифы</a></li>
+                </ul>
+              </nav>
+              <div class="header__cantacts"><a class="header__mail" href="mailto:support@mailchip.ru">support@mailchip.ru</a><a class="header__btn btn btn--accent-transparent">Вход</a></div>
+            </div>
+          </div>
+        </header>
+        <div class="breadcrumbs">
+          <div class="container breadcrumbs__container"><a class="breadcrumbs__link back" href="#">Назад</a></div>
+        </div>
+        <div class="hero">
+          <div class="container hero__container">
+            <div class="hero__box">
+              <div class="hero__info">
+                <div class="hero__text">
+                  <h1 class="hero__title section-header">Email-рассылка с нуля</h1>
+                  <div class="hero__descr">Запускаем рассылки с нуля: настройка домена, проверка базы, разработка мастер шаблона, анализ итогов рассылки</div>
+                  <div class="hero__price">от<span class="hero__price-count">3000 ₽*</span><span class="hero__price-descr">Срок: от 10 дней, услуга разовая</span></div><a class="hero__btn btn btn--accent open-modal" href="#modal-01">Уточнить стоимость</a>
+                  <div class="hero__footnote">*Цена и сроки зависят от объема работ. Оставьте заявку, и мы свяжемся с вами, чтобы уточнить детали.</div>
+                </div>
+              </div><img class="hero__img" src="img/content/hero-servicesItem.png" loading="lazy" alt="">
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="how-it-works" id="how-it-works">
+        <div class="container how-it-works__container">
+          <h2 class="section-header how-it-works__section-header">Как это работает</h2>
+          <ul class="how-it-works__box">
+                  <li class="how-it-works__item how-it-works-item"><img class="how-it-works-item__icon" src="img/content/how-it-works/01.svg" loading="lazy" alt="">
+                    <div class="how-it-works-item__box">
+                      <div class="how-it-works-item__title">Проконсультируем по запуску рассылки</div>
+                      <div class="how-it-works-item__descr">Поможем определить целевую аудиторию. Обсудим цели и ожидаемые результаты от рассылок.</div>
+                    </div>
+                  </li>
+                  <li class="how-it-works__item how-it-works-item"><img class="how-it-works-item__icon" src="img/content/how-it-works/02.svg" loading="lazy" alt="">
+                    <div class="how-it-works-item__box">
+                      <div class="how-it-works-item__title">Сделаем технические настройки</div>
+                      <div class="how-it-works-item__descr">Настроим Постмастер и почту отправителя: DKIM, DMARC, SPF. Установим на сайт форму</div>
+                    </div>
+                  </li>
+                  <li class="how-it-works__item how-it-works-item"><img class="how-it-works-item__icon" src="img/content/how-it-works/03.svg" loading="lazy" alt="">
+                    <div class="how-it-works-item__box">
+                      <div class="how-it-works-item__title">Загрузим базу</div>
+                      <div class="how-it-works-item__descr">Выберем оптимальный тариф и импортируем базу. Проведем проверку адресов. Выделим сегменты с учетом задач email-маркетинга.</div>
+                    </div>
+                  </li>
+                  <li class="how-it-works__item how-it-works-item"><img class="how-it-works-item__icon" src="img/content/how-it-works/04.svg" loading="lazy" alt="">
+                    <div class="how-it-works-item__box">
+                      <div class="how-it-works-item__title">Создадим шаблон письма</div>
+                      <div class="how-it-works-item__descr">Разработаем адаптивный шаблон в корпоративном стиле в конструкторе писем или с нуля. Вы сможете использовать его для будущих рассылок.</div>
+                    </div>
+                  </li>
+                  <li class="how-it-works__item how-it-works-item"><img class="how-it-works-item__icon" src="img/content/how-it-works/05.svg" loading="lazy" alt="">
+                    <div class="how-it-works-item__box">
+                      <div class="how-it-works-item__title">Запустим и проанализируем рассылку</div>
+                      <div class="how-it-works-item__descr">Отправим письмо. Проверим открываемость, количество кликов и отписок.</div>
+                    </div>
+                  </li>
+                  <li class="how-it-works__item how-it-works-item"><img class="how-it-works-item__icon" src="img/content/how-it-works/06.svg" loading="lazy" alt="">
+                    <div class="how-it-works-item__box">
+                      <div class="how-it-works-item__title">Дадим рекомендации</div>
+                      <div class="how-it-works-item__descr">Расскажем, как улучшить письмо и что делать дальше, чтобы наладить продажи через рассылки.</div>
+                    </div>
+                  </li>
+          </ul>
+          <div class="how-it-works__result">
+            <div class="how-it-works__result-title">Результат</div>
+            <div class="how-it-works__result-descr">
+              <p>Первая рассылка и набор рекомендаций, как внедрить email-маркетинг в компании. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-img-text" id="for-whom">
+        <div class="container block-img-text__container">
+          <div class="block-img-text__box">
+            <div class="block-img-text__img-box">
+              <div class="img-decor">
+                <div class="img-decor__wrapper"><img class="block-img-text__img" src="img/content/for-whom.jpg" loading="lazy" alt=""></div>
+              </div>
+            </div>
+            <div class="block-img-text__info">
+              <h2 class="section-header block-img-text__section-header">Для кого подойдет</h2>
+              <p>Поможем вывести Ваш маркетинг на высокий уровень, и это всё быстро, качественно и за приемлемую цену.</p>
+              <ul class="block-img-text__list">
+                <li class="block-img-text__item">
+                  <div class="block-img-text__title">Маркетологу</div>
+                  <div class="block-img-text__descr">Вам нужно запустить рассылку для компании, а вы этого никогда не делали.</div>
+                </li>
+                <li class="block-img-text__item">
+                  <div class="block-img-text__title">Предпринимателю</div>
+                  <div class="block-img-text__descr">Вы хотите привлекать клиентов из email-рассылки, но не знаете, с чего начать.</div>
+                </li>
+                <li class="block-img-text__item">
+                  <div class="block-img-text__title">Email-маркетологу</div>
+                  <div class="block-img-text__descr">Вы умеете делать рассылки, но хотите усилить компетенции под руководством профессионалов.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cases">
+        <div class="container cases__container">
+          <h2 class="section-header cases__section-header">Помогаем клиентам заработать на рассылках</h2>
+          <div class="cases__box">
+            <div class="cases__slider swiper jsCasesSlider">
+              <ul class="cases__list cases-list swiper-wrapper">
+                <li class="cases-list__item swiper-slide">
+                  <div class="cases-list__logo"><img class="cases-list__icon" src="img/rocket-business.svg" loading="lazy" alt=""></div>
+                  <div class="cases-list__info">
+                    <ul>
+                      <li>
+                        <p><strong>Клиент</strong></p>
+                        <p>“Название компании” горнолыжный интернет-магазин</p>
+                      </li>
+                      <li>
+                        <p><strong>Что сделали</strong></p>
+                        <p>Внедрили email-маркетинг под ключ. Установили форму подписки на сайт, запустили велком-серию, брошенные корзины, специальные цепочки по крупным распродажам.</p>
+                      </li>
+                      <li>
+                        <p><strong>Результат</strong></p>
+                        <p>Открываемость выросла в среднем на 10%, а переходы на сайт — в 3 раза.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="cases-list__item swiper-slide">
+                  <div class="cases-list__logo"><img class="cases-list__icon" src="img/logo.png" loading="lazy" alt=""></div>
+                  <div class="cases-list__info">
+                    <ul>
+                      <li>
+                        <p><strong>Клиент</strong></p>
+                        <p>“Название компании” горнолыжный интернет-магазин</p>
+                        <p><strong>Что сделали</strong></p>
+                        <p>Внедрили email-маркетинг под ключ. Установили форму подписки на сайт, запустили велком-серию, брошенные корзины, специальные цепочки по крупным распродажам.</p>
+                        <p><strong>Результат</strong></p>
+                        <p>Открываемость выросла в среднем на 10%, а переходы на сайт — в 3 раза.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper__prev cases__prev"></div>
+            <div class="swiper__next cases__next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="container faq__container">
+          <h2 class="section-header faq__section-header">Часто задаваемые вопросы</h2>
+          <ul class="faq__list faq-list">
+            <li class="faq-list__item">
+              <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку?</div>
+              <div class="faq-list__descr accordeon-descr">
+                <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
+              </div>
+            </li>
+            <li class="faq-list__item">
+              <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку? Как быстро можно запустить email-рассылку?</div>
+              <div class="faq-list__descr accordeon-descr">
+                <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
+              </div>
+            </li>
+            <li class="faq-list__item">
+              <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку?</div>
+              <div class="faq-list__descr accordeon-descr">
+                <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
+              </div>
+            </li>
+            <li class="faq-list__item">
+              <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку?</div>
+              <div class="faq-list__descr accordeon-descr">
+                <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
+              </div>
+            </li>
+            <li class="faq-list__item">
+              <div class="faq-list__title accordeon-title">Как быстро можно запустить email-рассылку?</div>
+              <div class="faq-list__descr accordeon-descr">
+                <p>всё можно запустить за 15 минут. Что для этого нужно:Загрузить базу контактов.Создать email в конструкторе. Написать тему письма и выбрать время отправки.Отправить.Через 1-2 дня после отправки оцените результаты, посмотрев статистику</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="call-to-action">
+        <div class="container call-to-action__container">
+          <div class="call-to-action__box">
+            <h2 class="call-to-action__title section-header call-to-action__section-header">Закажите создание email-рассылки с нуля</h2>
+            <div class="call-to-action__descr">Мы запустим первую рассылку за вас и научим получать клиентов с помощью email-маркетинга.</div><a class="call-to-action__btn btn btn--accent open-modal" href="#modal-01">Оставить заявку</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__top footer-top"><a class="footer-top__logo" href="#"><img src="img/logo-footer.png" loading="lazy" alt=""></a>
+          <ul class="footer-top__menu footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Услуги</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">О компании</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Тарифы</a></li>
+          </ul>
+          <div class="footer-top__contacts"><a href="tel:+79257079442">+7 (925)707-94-42</a><a href="mailto:support@mailchip.ru">support@mailchip.ru</a></div>
+        </div>
+        <div class="footer__middle footer-middle">
+          <div class="footer-middle__col"><a class="footer-link" href="#">Публичный договор</a><a class="footer-link" href="#">Анти-спам политика</a></div>
+          <div class="footer-middle__col"><a class="footer-link" href="#">Политика приватности</a><a class="footer-link" href="#">Политика безопасности</a></div>
+        </div>
+        <div class="footer__bottom footer-bottom">
+          <div class="footer-bottom__col">MailChip — онлайн-сервис, который позволяет организовать email-рассылки вашим клиентам быстро, надёжно и недорого!				</div>
+          <div class="footer-bottom__col">ООО «Джалисия» ОГРН 1221600022820 ИНН/КПП 1644099745 164401001. Адрес: 423408, Республика Татарстан, Альметьевский р-н, г Альметьевск, мкр. Урсала, Наили Закировой ул, д. 10.Режим работы: ПН-ПТ 09:30–18:00<a class="footer__seo footer-seo" href="https://rbru.ru/uslugi/seo-prodvizheniye-sayta/"><img class="footer-seo__img" src="img/rocket-business.svg" loading="lazy" alt=""><span>Продвижение сайта Rocket Business</span></a></div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" id="modal-01">
+      <div class="modal__inner">
+        <div class="modal__content modal-content">
+          <div class="modal-content__top"><img src="img/bg-popup-top.jpg" alt="Онлайн заявка"></div>
+          <div class="modal-content__middle">
+            <form class="help__form form" action="#" method="post">
+              <div class="form__title">Есть вопросы?</div>
+              <div class="input-wrapper">
+                <input class="form__email" id="email" type="email" name="email" placeholder="E-mail">
+              </div>
+              <div class="input-wrapper">
+                <input class="form__phone" id="phone" type="tel" name="phone" placeholder="Номер телефона">
+              </div>
+              <div class="input-wrapper">
+                <textarea class="form__message" id="message" name="message" placeholder="Напишите ваш вопрос"></textarea>
+              </div>
+              <button class="form__btn btn btn--accent btn--grren" type="submit">Отправить</button>
+              <div class="input-wrapper agreement">
+                <label class="agreement__label" for="agreement">
+                  <input class="form__agreement" id="agreement" name="agreement" type="checkbox" required="" checked="">Я принимаю условия&nbsp;<a href="#">политики конфиденцианольности</a>
+                </label>
+              </div>
+              <div class="form-close close-modal"><span class="close-modal">Закрыть</span></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <div class="mobile-menu__wrapper"></div>
     </div>
   </body>
 </html>
