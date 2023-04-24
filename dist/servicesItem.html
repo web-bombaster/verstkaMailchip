@@ -20,9 +20,9 @@
               <button class="header__menu-btn burger__menu-btn js-burger jsMobileMenuBtnToggle"><span></span></button><a class="header__logo" href="/"><img src="img/logo.png" alt=""></a>
               <nav class="header__nav" data-da="mobile-menu__wrapper,1,768">
                 <ul class="header__menu header__menu menu">
-                  <li class="menu__item"><a class="menu-link" href="#services">Услуги</a></li>
-                  <li class="menu__item"><a class="menu-link" href="#instruction">О компании</a></li>
-                  <li class="menu__item"><a class="menu-link" href="#tariff">Тарифы</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#">Услуги</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#">О компании</a></li>
+                  <li class="menu__item"><a class="menu-link" href="#">Тарифы</a></li>
                 </ul>
               </nav>
               <div class="header__cantacts"><a class="header__mail" href="mailto:support@mailchip.ru">support@mailchip.ru</a><a class="header__btn btn btn--accent-transparent">Вход</a></div>
@@ -39,8 +39,7 @@
                 <div class="hero__text">
                   <h1 class="hero__title section-header">Email-рассылка с нуля</h1>
                   <div class="hero__descr">Запускаем рассылки с нуля: настройка домена, проверка базы, разработка мастер шаблона, анализ итогов рассылки</div>
-                  <div class="hero__price">от<span class="hero__price-count">3000 ₽*</span><span class="hero__price-descr">Срок: от 10 дней, услуга разовая</span></div>
-                  <button class="hero__btn btn btn--accent">Уточнить стоимость</button>
+                  <div class="hero__price">от<span class="hero__price-count">3000 ₽*</span><span class="hero__price-descr">Срок: от 10 дней, услуга разовая</span></div><a class="hero__btn btn btn--accent open-modal" href="#modal-01">Уточнить стоимость</a>
                   <div class="hero__footnote">*Цена и сроки зависят от объема работ. Оставьте заявку, и мы свяжемся с вами, чтобы уточнить детали.</div>
                 </div>
               </div><img class="hero__img" src="img/content/hero-servicesItem.png" loading="lazy" alt="">
@@ -212,9 +211,9 @@
       </div>
       <div class="call-to-action">
         <div class="container call-to-action__container"><a class="call-to-action__box" href="#">
-            <h2 class="call-to-action__title section-header call-to-action__section-header">Создайте рассылку в MailChip за считанные минуты </h2>
-            <div class="call-to-action__descr">Начните с нами улучшать свой маркетинг прямо сейчас!</div>
-            <button class="call-to-action__btn btn btn--accent">Зарегистрироваться</button></a></div>
+            <h2 class="call-to-action__title section-header call-to-action__section-header">Закажите создание email-рассылки с нуля</h2>
+            <div class="call-to-action__descr">Мы запустим первую рассылку за вас и научим получать клиентов с помощью email-маркетинга.</div>
+            <button class="call-to-action__btn btn btn--accent">Оставить заявку</button></a></div>
       </div>
     </main>
     <footer class="footer">
@@ -222,8 +221,8 @@
         <div class="footer__top footer-top"><a class="footer-top__logo" href="#"><img src="img/logo-footer.png" loading="lazy" alt=""></a>
           <ul class="footer-top__menu footer-menu">
             <li class="footer-menu__item"><a class="footer-menu__link" href="#">Услуги</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">О компании</a></li>
             <li class="footer-menu__item"><a class="footer-menu__link" href="#">Тарифы</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Способы оплаты</a></li>
           </ul>
           <div class="footer-top__contacts"><a href="tel:+79257079442">+7 (925)707-94-42</a><a href="mailto:support@mailchip.ru">support@mailchip.ru</a></div>
         </div>
@@ -237,6 +236,34 @@
         </div>
       </div>
     </footer>
+    <div class="modal" id="modal-01">
+      <div class="modal__inner">
+        <div class="modal__content modal-content">
+          <div class="modal-content__top"><img src="img/bg-popup-top.jpg" alt="Онлайн заявка"></div>
+          <div class="modal-content__middle">
+            <form class="help__form form" action="#" method="post">
+              <div class="form__title">Есть вопросы?</div>
+              <div class="input-wrapper">
+                <input class="form__email" id="email" type="email" name="email" placeholder="E-mail">
+              </div>
+              <div class="input-wrapper">
+                <input class="form__phone" id="phone" type="tel" name="phone" placeholder="Номер телефона">
+              </div>
+              <div class="input-wrapper">
+                <textarea class="form__message" id="message" name="message" placeholder="Напишите ваш вопрос"></textarea>
+              </div>
+              <button class="form__btn btn btn--accent btn--grren" type="submit">Отправить</button>
+              <div class="input-wrapper agreement">
+                <label class="agreement__label" for="agreement">
+                  <input class="form__agreement" id="agreement" name="agreement" type="checkbox" required="" checked="">Я принимаю условия&nbsp;<a href="#">политики конфиденцианольности</a>
+                </label>
+              </div>
+              <div class="form-close close-modal"><span class="close-modal">Закрыть</span></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="mobile-menu">
       <div class="mobile-menu__wrapper"></div>
     </div>

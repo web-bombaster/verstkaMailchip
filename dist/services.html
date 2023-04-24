@@ -19,9 +19,9 @@
             <button class="header__menu-btn burger__menu-btn js-burger jsMobileMenuBtnToggle"><span></span></button><a class="header__logo" href="/"><img src="img/logo.png" alt=""></a>
             <nav class="header__nav" data-da="mobile-menu__wrapper,1,768">
               <ul class="header__menu header__menu menu">
-                <li class="menu__item"><a class="menu-link" href="#services">Услуги</a></li>
-                <li class="menu__item"><a class="menu-link" href="#instruction">О компании</a></li>
-                <li class="menu__item"><a class="menu-link" href="#tariff">Тарифы</a></li>
+                <li class="menu__item"><a class="menu-link" href="#">Услуги</a></li>
+                <li class="menu__item"><a class="menu-link" href="#">О компании</a></li>
+                <li class="menu__item"><a class="menu-link" href="#">Тарифы</a></li>
               </ul>
             </nav>
             <div class="header__cantacts"><a class="header__mail" href="mailto:support@mailchip.ru">support@mailchip.ru</a><a class="header__btn btn btn--accent-transparent">Вход</a></div>
@@ -34,16 +34,16 @@
       <div class="our-services">
         <div class="container our-services__container">
           <h1 class="section-header our-services__section-header">Услуги</h1>
-          <div class="our-services__box services-box">
-            <div class="services-box__item services-item">
+          <ul class="our-services__box services-box">
+            <li class="services-box__item services-item">
               <div class="services-item__title">Комплексные услуги</div>
               <ul>
                 <li><a href="#">Email-рассылка с нуля</a></li>
                 <li><a href="#">Ежемесячное ведение рассылок</a></li>
                 <li><a href="#">Настройка рассылки</a></li>
               </ul>
-            </div>
-            <div class="services-box__item services-item">
+            </li>
+            <li class="services-box__item services-item">
               <div class="services-item__title">Разовые услуги</div>
               <ul>
                 <li><a href="#">Аудит рассылок</a></li>
@@ -51,24 +51,24 @@
                 <li><a href="#">Автоматическая серия писем</a></li>
                 <li><a href="#">Реанимация базы</a></li>
               </ul>
-            </div>
-            <div class="services-box__item services-item">
+            </li>
+            <li class="services-box__item services-item">
               <div class="services-item__title">Шаблоны писем</div>
               <ul>
                 <li><a href="#">Создадим шаблон письма</a></li>
                 <li><a href="#">Заказать верстку письма</a></li>
               </ul>
-            </div>
-            <div class="services-box__item services-item">
+            </li>
+            <li class="services-box__item services-item">
               <div class="services-item__title">Помощь в работе</div>
               <ul>
                 <li><a href="#">Аутентификация</a></li>
                 <li><a href="#">Настройка корпоративной почты</a></li>
                 <li><a href="#">Настройка форм подписки</a></li>
               </ul>
-            </div>
-            <div class="services-box__item services-item decor"></div>
-          </div>
+            </li>
+            <li class="services-box__item services-item decor"></li>
+          </ul>
         </div>
       </div>
     </main>
@@ -77,8 +77,8 @@
         <div class="footer__top footer-top"><a class="footer-top__logo" href="#"><img src="img/logo-footer.png" loading="lazy" alt=""></a>
           <ul class="footer-top__menu footer-menu">
             <li class="footer-menu__item"><a class="footer-menu__link" href="#">Услуги</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">О компании</a></li>
             <li class="footer-menu__item"><a class="footer-menu__link" href="#">Тарифы</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Способы оплаты</a></li>
           </ul>
           <div class="footer-top__contacts"><a href="tel:+79257079442">+7 (925)707-94-42</a><a href="mailto:support@mailchip.ru">support@mailchip.ru</a></div>
         </div>
@@ -92,6 +92,34 @@
         </div>
       </div>
     </footer>
+    <div class="modal" id="modal-01">
+      <div class="modal__inner">
+        <div class="modal__content modal-content">
+          <div class="modal-content__top"><img src="img/bg-popup-top.jpg" alt="Онлайн заявка"></div>
+          <div class="modal-content__middle">
+            <form class="help__form form" action="#" method="post">
+              <div class="form__title">Есть вопросы?</div>
+              <div class="input-wrapper">
+                <input class="form__email" id="email" type="email" name="email" placeholder="E-mail">
+              </div>
+              <div class="input-wrapper">
+                <input class="form__phone" id="phone" type="tel" name="phone" placeholder="Номер телефона">
+              </div>
+              <div class="input-wrapper">
+                <textarea class="form__message" id="message" name="message" placeholder="Напишите ваш вопрос"></textarea>
+              </div>
+              <button class="form__btn btn btn--accent btn--grren" type="submit">Отправить</button>
+              <div class="input-wrapper agreement">
+                <label class="agreement__label" for="agreement">
+                  <input class="form__agreement" id="agreement" name="agreement" type="checkbox" required="" checked="">Я принимаю условия&nbsp;<a href="#">политики конфиденцианольности</a>
+                </label>
+              </div>
+              <div class="form-close close-modal"><span class="close-modal">Закрыть</span></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="mobile-menu">
       <div class="mobile-menu__wrapper"></div>
     </div>
